@@ -1,5 +1,5 @@
 {
-  "name": "react-native-snippet-youngjuning",
+  "name": "react-native-snippets-youngjuning",
   "version": "0.0.0",
   "author": {
     "name": "杨俊宁",
@@ -12,7 +12,7 @@
     "react native",
     "react"
   ],
-  "repository": "https://github.com/youngjuning/react-native-snippet-youngjuning",
+  "repository": "https://github.com/youngjuning/react-native-snippets-youngjuning",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
