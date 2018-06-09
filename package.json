@@ -1,0 +1,20 @@
+{
+  "name": "react-native-snippet-youngjuning",
+  "version": "0.0.0",
+  "author": {
+    "name": "杨俊宁",
+    "email": "youngjuning@aliyun.com",
+    "url": "http://www.wakeuptocode.me/"
+  },
+  "description": "atom react native snippets plugin by youngjuning",
+  "keywords": [
+    "youngjuning",
+    "react native",
+    "react"
+  ],
+  "repository": "https://github.com/youngjuning/react-native-snippet-youngjuning",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}

@@ -1,0 +1,81 @@
+'.source.js.jsx':
+  'style':
+    'prefix': 'style'
+    'body': """
+      style={[styles.$1]}
+    """
+  'flex':
+    'prefix': 'flex'
+    'body': """
+      flex: ${1:1},
+    """
+  'flexDirection':
+    'prefix': 'flexDirection'
+    'body': """
+      flexDirection: '$1',
+    """
+  'alignItems':
+    'prefix': 'alignItems'
+    'body': """
+      alignItems: '$1',
+    """
+  'justifyContent':
+    'prefix': 'justifyContent'
+    'body': """
+      justifyContent: '$1',
+    """
+  'fontWeight':
+    'prefix': 'fontWeight'
+    'body': """
+      fontWeight: '$1',
+    """
+  'fontSize':
+    'prefix': 'fontSize'
+    'body': """
+      fontSize: $1,
+    """
+  'color':
+   'prefix': 'color'
+   'body': """
+     color: '$1',
+   """
+  'backgroundColor':
+   'prefix': 'backgroundColor'
+   'body': """
+     backgroundColor: '$1',
+   """
+  'width':
+    'prefix': 'width'
+    'body': """
+      width: $1,
+    """
+  'height':
+    'prefix': 'height'
+    'body': """
+      height: $1,
+    """
+  'padding':
+    'prefix': 'padding'
+    'body': """
+      padding: $1,
+    """
+  'paddingTop':
+    'prefix': 'paddingTop'
+    'body': """
+      paddingTop: $1,
+    """
+  'paddingLeft':
+    'prefix': 'paddingLeft'
+    'body': """
+      paddingLeft: $1,
+    """
+  'paddingRight':
+    'prefix': 'paddingRight'
+    'body': """
+      paddingRight: $1,
+    """
+  'paddingBottom':
+    'prefix': 'paddingBottom'
+    'body': """
+      paddingBottom: $1,
+    """

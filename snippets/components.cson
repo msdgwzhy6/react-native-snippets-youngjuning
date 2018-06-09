@@ -1,0 +1,57 @@
+'.source.js.jsx':
+  'React Native View Container Component':
+    'prefix': 'viewc'
+    'body': """
+      <View style={[styles.$1]}>
+        $2
+      </View>
+    """
+  'React Native View Component':
+    'prefix': 'view'
+    'body': """
+      <View style={[styles.$1]}/>
+    """
+  'React Native ScrollView Component':
+    'prefix': 'ScrollView'
+    'body': """
+      <ScrollView>
+        $1
+      </ScrollView>
+    """
+  'React Native Text Component':
+    'prefix': 'text'
+    'body': """
+      <Text style={[$1]}>${2:React Native Text}</Text>
+    """
+  'React Native Image Component':
+    'prefix': 'image'
+    'body': """
+      <Image source={require('$1')}/>
+    """
+  'React Native TextInput Component':
+    'prefix': 'TextInput'
+    'body': """
+      <TextInput
+        style={[styles.$1]}
+        placeholder='please input your name'
+        onChangeText={(text) => this.setState({text})}
+      />
+    """
+  # 长列表
+  'React Native FlatList Component':
+    'prefix': 'FlatList'
+    'body': """
+      <FlatList
+        data={[
+          {key: 'Devin'},
+          {key: 'Jackson'},
+          {key: 'James'},
+          {key: 'Joel'},
+          {key: 'John'},
+          {key: 'Jillian'},
+          {key: 'Jimmy'},
+          {key: 'Julie'},
+        ]}
+        renderItem={({item}) => <Text style={styles.item}>{item.key}</Text>}
+      />
+    """
