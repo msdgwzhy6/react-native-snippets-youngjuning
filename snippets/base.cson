@@ -1,34 +1,4 @@
 '.source.js.jsx':
-  '不换行的箭头函数':
-    'prefix': 'afr'
-    'body': """
-      ($1) => $2
-    """
-  'React Native class':
-    'prefix': 'rnclass'
-    'body': """
-      class $1 extends Component {
-        // 一般来说，你需要在constructor中初始化state，然后在需要修改时调用setState方法。
-        constructor(props) {
-          super(props);
-        }
-        render() {
-          return (
-            $2
-          );
-        }
-      }
-    """
-  'React Native Class Constructor':
-    'prefix': 'rncc'
-    'body': """
-      constructor(props) {
-        super(props);
-        this.state = {
-          $1,
-        };
-      }
-    """
   # React Native 组件骨架
   'React Native Component Skeleton':
     'prefix': 'rnc'
@@ -81,3 +51,33 @@
         },
       });
       """
+  '不换行的箭头函数':
+    'prefix': 'afr'
+    'body': """
+      ($1) => $2
+    """
+  'React Native class':
+    'prefix': 'rnclass'
+    'body': """
+      class $1 extends Component {
+        // 一般来说，你需要在constructor中初始化state，然后在需要修改时调用setState方法。
+        constructor(props) {
+          super(props);
+        }
+        render() {
+          return (
+            $2
+          );
+        }
+      }
+    """
+  'React Native Class Constructor':
+    'prefix': 'rncc'
+    'body': """
+      constructor(props) {
+        super(props);
+        this.state = {
+          $1,
+        };
+      }
+    """
