@@ -9,9 +9,9 @@
   "React: Component setState":
     'prefix': "thissetState"
     'body': """
-      this.setState(
+      this.setState({
         ${1}
-      )
+      })
     """
   "React: Component setState with Callback":
     'prefix': "thissetStateCallback"
