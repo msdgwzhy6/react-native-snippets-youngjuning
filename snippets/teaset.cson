@@ -36,7 +36,7 @@
       <NavigationBar
         type="ios"
         title="${1:标题}"
-        leftView={<NavigationBar.BackButton title="Back" />}
+        leftView={<NavigationBar.BackButton title={Theme.backButtonTitle} />}
         rightView={
           <View style={{ flexDirection: 'row' }}>
             <NavigationBar.IconButton icon={search} />
@@ -95,4 +95,28 @@
     'prefix': 'Toast.hideLoading'
     'body': """
       Toast.hide(loading)
+    """
+  # Theme
+  'Teaset Theme.statusBarHeight':
+    'prefix': 'Theme.statusBarHeight'
+    'body': """
+      Theme.statusBarHeight
+    """
+  'Teaset Theme.navBarContentHeight':
+    'prefix': 'Theme.navBarContentHeight'
+    'body': """
+      Theme.navBarContentHeight
+    """
+  'Teaset Theme 修改默认配色方案':
+    'prefix': 'Theme.themes'
+    'body': """
+      Theme.set(Theme.themes.${1:default/black/violet})
+    """
+  'Teaset Theme 修改部分默认值':
+    'prefix': 'Theme.set'
+    'body': """
+      Theme.set({
+        primaryColor: '#f55e5d',
+        backButtonTitle: '返回',
+      })
     """
