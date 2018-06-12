@@ -29,3 +29,53 @@
         onPress={() => { $2 }}
       />
     """
+  # API
+  # Teaset Toast API
+  'Teaset Toast.message':
+    'prefix': 'Toast.message'
+    'body': """
+      Toast.message('${1:Toast message}')
+    """
+  'Teaset Toast.success':
+    'prefix': 'Toast.success'
+    'body': """
+      Toast.success('${1:Toast success}')
+    """
+  'Teaset Toast.fail':
+    'prefix': 'Toast.fail'
+    'body': """
+      Toast.fail('${1:Toast fail}')
+    """
+  'Teaset Toast.smile':
+    'prefix': 'Toast.smile'
+    'body': """
+      Toast.smile('${1:Toast smile}')
+    """
+  'Teaset Toast.sad':
+    'prefix': 'Toast.sad'
+    'body': """
+      Toast.sad('${1:Toast sad}')
+    """
+  'Teaset Toast.info':
+    'prefix': 'Toast.info'
+    'body': """
+      Toast.info('${1:Toast info}')
+    """
+  'Teaset Toast.stop':
+    'prefix': 'Toast.stop'
+    'body': """
+      Toast.stop('${1:Toast stop}')
+    """
+  'Teaset Toast.showLoading':
+    'prefix': 'Toast.showLoading'
+    'body': """
+      const loading = Toast.show({
+        text: '$1',
+        icon: <ActivityIndicator size="large" color={Theme.toastIconTintColor} />,
+      })
+    """
+  'Teaset Toast.hideLoading':
+    'prefix': 'Toast.hideLoading'
+    'body': """
+      Toast.hide(loading)
+    """
