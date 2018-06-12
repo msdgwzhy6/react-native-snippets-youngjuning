@@ -1,0 +1,141 @@
+'.source.js.jsx':
+  'import teaset':
+    'prefix': 'teaset'
+    'body': """
+      import {
+        Input,
+        Button,
+      }
+    """
+  'Teaset Input Component':
+    'prefix': 'Input'
+    'body': """
+      <Input
+        style={[styles.$1]}
+        size="lg"
+        placeholder="$3"
+        value={this.state.${2:value}}
+        onChangeText={text => this.setState({ value: text })}
+      />
+    """
+  'Teaset Button Component':
+    'prefix': 'Button'
+    'body': """
+      <Button
+      style={[styles.$1]}
+        type="primary"
+        size="lg"
+        title="按钮"
+        onPress={() => { $2 }}
+      />
+    """
+  # NavigationBar
+  'Teaset NavigationBar Component':
+    'prefix': 'NavigationBar'
+    'body': """
+      <NavigationBar
+        style={styles.$1}
+        type="${2:auto/ios/android}"
+        title="${3:标题}"
+        leftView={<NavigationBar.BackButton title={Theme.backButtonTitle} />}
+        rightView={
+          <View style={{ flexDirection: 'row' }}>
+            <NavigationBar.IconButton icon={search} />
+          </View>
+        }
+      />
+    """
+  'Teaset NavigationBar.BackButton':
+    'prefix': 'NavigationBar.BackButton'
+    'body': """
+      <NavigationBar.BackButton title={Theme.backButtonTitle} />
+    """
+  # API
+  # Teaset Toast API
+  'Teaset Toast.message':
+    'prefix': 'Toast.message'
+    'body': """
+      Toast.message('${1:Toast message}')
+    """
+  'Teaset Toast.success':
+    'prefix': 'Toast.success'
+    'body': """
+      Toast.success('${1:Toast success}')
+    """
+  'Teaset Toast.fail':
+    'prefix': 'Toast.fail'
+    'body': """
+      Toast.fail('${1:Toast fail}')
+    """
+  'Teaset Toast.smile':
+    'prefix': 'Toast.smile'
+    'body': """
+      Toast.smile('${1:Toast smile}')
+    """
+  'Teaset Toast.sad':
+    'prefix': 'Toast.sad'
+    'body': """
+      Toast.sad('${1:Toast sad}')
+    """
+  'Teaset Toast.info':
+    'prefix': 'Toast.info'
+    'body': """
+      Toast.info('${1:Toast info}')
+    """
+  'Teaset Toast.stop':
+    'prefix': 'Toast.stop'
+    'body': """
+      Toast.stop('${1:Toast stop}')
+    """
+  'Teaset Toast.showLoading':
+    'prefix': 'Toast.showLoading'
+    'body': """
+      const loading = Toast.show({
+        text: '$1',
+        icon: <ActivityIndicator size="large" color={Theme.toastIconTintColor} />,
+      })
+    """
+  'Teaset Toast.hideLoading':
+    'prefix': 'Toast.hideLoading'
+    'body': """
+      Toast.hide(loading)
+    """
+  # Theme
+  'Teaset Theme.statusBarHeight':
+    'prefix': 'Theme.statusBarHeight'
+    'body': """
+      Theme.statusBarHeight
+    """
+  'Teaset Theme.navBarContentHeight':
+    'prefix': 'Theme.navBarContentHeight'
+    'body': """
+      Theme.navBarContentHeight
+    """
+  'Teaset Theme.toastIconTintColor':
+    'prefix': 'Theme.toastIconTintColor'
+    'body': """
+      Theme.toastIconTintColor
+    """
+  'Teaset Theme.backButtonTitle':
+    'prefix': 'Theme.backButtonTitle'
+    'body': """
+      Theme.backButtonTitle
+    """
+  'Teaset Theme.primaryColor':
+    'prefix': 'Theme.primaryColor'
+    'body': """
+      Theme.primaryColor
+    """
+  'Teaset Theme 修改默认配色方案':
+    'prefix': 'Theme.themes'
+    'body': """
+      Theme.set(Theme.themes.${1:default/black/violet})
+    """
+  'Teaset Theme 修改部分默认值':
+    'prefix': 'Theme.set'
+    'body': """
+      Theme.set({
+        primaryColor: '#f55e5d',
+        backButtonTitle: '返回',
+      })
+    """

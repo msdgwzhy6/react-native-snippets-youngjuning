@@ -10,7 +10,11 @@
     'prefix': "thissetState"
     'body': """
       this.setState({
+<<<<<<< HEAD
         $1
+=======
+        ${1}
+>>>>>>> 4c6b79af5c106096df18c01c591b59d8a84494c5
       })
     """
   "React: Component setState with Callback":

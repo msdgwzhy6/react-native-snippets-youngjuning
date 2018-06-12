@@ -3,53 +3,60 @@
   'React Native Component Skeleton':
     'prefix': 'rnc'
     'body': """
-      import React, { Component } from 'react';
+      import React, { Component } from 'react'
       import {
         View,
         Text,
         StyleSheet,
-      } from 'react-native';
+      } from 'react-native'
+
+      const styles = StyleSheet.create({
+        container: {
+          flex: 1,
+        },
+      })
 
       export default class ${1:MyComponent} extends Component {
+        constructor(props) {
+          super(props)
+          this.state = {
+            $2
+          }
+        }
+        componentDidMount() {
+
+        }
         render() {
           return (
             <View style={styles.container}>
-              <Text>I'm the ${1:MyComponent} component</Text>
+              <Text>I am the ${1:MyComponent} component</Text>
             </View>
-          );
+          )
         }
       }
-
-      const styles = StyleSheet.create({
-        container: {
-          flex: 1,
-        },
-      });
     """
   # React Native 纯组件骨架
   'React Native Pure Component Skeleton':
-    'prefix': 'rnp'
+    'prefix': 'rncp'
     'body': """
-      import React from 'react';
+      import React from 'react'
       import {
         View,
         Text,
         StyleSheet,
-      } from 'react-native';
-
-      const ${1:MyComponent} = ({$2}) => (
-        ${3:<View style={styles.container\\}>
-          ${4:<Text>${5:I'm ${1:MyComponent}}</Text>}
-        </View>}
-      );$6
-
-      export default ${1:MyComponent};
+      } from 'react-native'
 
       const styles = StyleSheet.create({
         container: {
           flex: 1,
         },
-      });
+      })
+
+      export default ${1:MyComponent} = ({$2}) => (
+        ${3:<View style={styles.container\\}>
+          ${4:<Text>${5:I am ${1:MyComponent}}</Text>}
+        </View>}
+      )$6
       """
   '不换行的箭头函数':
     'prefix': 'afr'
@@ -62,12 +69,12 @@
       class $1 extends Component {
         // 一般来说，你需要在constructor中初始化state，然后在需要修改时调用setState方法。
         constructor(props) {
-          super(props);
+          super(props)
         }
         render() {
           return (
             $2
-          );
+          )
         }
       }
     """
@@ -75,9 +82,30 @@
     'prefix': 'rncc'
     'body': """
       constructor(props) {
-        super(props);
+        super(props)
         this.state = {
           $1,
-        };
+        }
       }
     """
+  'componentWillMount':
+    'prefix': 'willmount'
+    'body': """
+      componentWillMount() {
+
+      }
+    """
+  'componentDidMount':
+    'prefix': 'didmount'
+    'body': """
+      componentDidMount() {
+
+      }
+    """
+  'componentWillUnmount':
+    'prefix': 'willUnmount'
+    'body': """
+      componentWillUnmount() {
+
+      }
+    """  
