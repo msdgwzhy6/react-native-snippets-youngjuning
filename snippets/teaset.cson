@@ -44,8 +44,11 @@
         }
       />
     """
-    'description': ''
-    'descriptionMoreURL': ''
+  'Teaset NavigationBar.BackButton':
+    'prefix': 'NavigationBar.BackButton'
+    'body': """
+      <NavigationBar.BackButton title={Theme.backButtonTitle} />
+    """
   # API
   # Teaset Toast API
   'Teaset Toast.message':
