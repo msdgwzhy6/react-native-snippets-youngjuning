@@ -1,11 +1,31 @@
 '.source.js.jsx':
+  'import teaset':
+    'prefix': 'teaset'
+    'body': """
+      import {
+        Input,
+        Button,
+      }
+    """
   'Teaset Input Component':
     'prefix': 'Input'
     'body': """
       <Input
         style={[styles.$1]}
         size="lg"
+        placeholder="$3"
         value={this.state.${2:value}}
         onChangeText={text => this.setState({ value: text })}
+      />
+    """
+  'Teaset Button Component':
+    'prefix': 'Button'
+    'body': """
+      <Button
+      style={[styles.$1]}
+        type="primary"
+        size="lg"
+        title="按钮"
+        onPress={() => { $2 }}
       />
     """

@@ -23,6 +23,9 @@
             $2
           }
         }
+        componentDidMount() {
+
+        }
         render() {
           return (
             <View style={styles.container}>
@@ -85,13 +88,24 @@
         }
       }
     """
-  # 引入 teaset
-  'import teaset':
-    'prefix': 'teaset'
+  'componentWillMount':
+    'prefix': 'willmount'
     'body': """
-      import {
-        Input,
-        Button,
+      componentWillMount() {
+
       }
     """
-  
+  'componentDidMount':
+    'prefix': 'didmount'
+    'body': """
+      componentDidMount() {
+
+      }
+    """
+  'componentWillUnmount':
+    'prefix': 'willUnmount'
+    'body': """
+      componentWillUnmount() {
+
+      }
+    """  
