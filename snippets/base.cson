@@ -15,12 +15,18 @@
           flex: 1,
         },
       })
-      
+
       export default class ${1:MyComponent} extends Component {
+        constructor(props) {
+          super(props)
+          this.state = {
+            $2
+          }
+        }
         render() {
           return (
             <View style={styles.container}>
-              <Text>I'm the ${1:MyComponent} component</Text>
+              <Text>I am the ${1:MyComponent} component</Text>
             </View>
           )
         }
@@ -28,7 +34,7 @@
     """
   # React Native 纯组件骨架
   'React Native Pure Component Skeleton':
-    'prefix': 'rnpc'
+    'prefix': 'rncp'
     'body': """
       import React from 'react'
       import {
