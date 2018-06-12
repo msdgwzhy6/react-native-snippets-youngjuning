@@ -1,4 +1,5 @@
 '.source.js.jsx':
+  # 基本视图
   'React Native View Container Component':
     'prefix': 'viewc'
     'body': """

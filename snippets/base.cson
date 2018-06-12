@@ -85,3 +85,13 @@
         }
       }
     """
+  # 引入 teaset
+  'import teaset':
+    'prefix': 'teaset'
+    'body': """
+      import {
+        Input,
+        Button,
+      }
+    """
+  

@@ -1,0 +1,11 @@
+'.source.js.jsx':
+  'Teaset Input Component':
+    'prefix': 'Input'
+    'body': """
+      <Input
+        style={[styles.$1]}
+        size="lg"
+        value={this.state.${2:value}}
+        onChangeText={text => this.setState({ value: text })}
+      />
+    """
