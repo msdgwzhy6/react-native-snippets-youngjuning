@@ -79,3 +79,28 @@
     'body': """
       paddingBottom: $1,
     """
+  'margin':
+    'prefix': 'margin'
+    'body': """
+      margin: $1,
+    """
+  'marginTop':
+    'prefix': 'marginTop'
+    'body': """
+      marginTop: $1,
+    """
+  'marginLeft':
+    'prefix': 'marginLeft'
+    'body': """
+      marginLeft: $1,
+    """
+  'marginRight':
+    'prefix': 'marginRight'
+    'body': """
+      marginRight: $1,
+    """
+  'marginBottom':
+    'prefix': 'marginBottom'
+    'body': """
+      marginBottom: $1,
+    """

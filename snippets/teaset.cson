@@ -29,6 +29,23 @@
         onPress={() => { $2 }}
       />
     """
+  # NavigationBar
+  'Teaset NavigationBar Component':
+    'prefix': 'NavigationBar'
+    'body': """
+      <NavigationBar
+        type="ios"
+        title="${1:标题}"
+        leftView={<NavigationBar.BackButton title="Back" />}
+        rightView={
+          <View style={{ flexDirection: 'row' }}>
+            <NavigationBar.IconButton icon={search} />
+          </View>
+        }
+      />
+    """
+    'description': ''
+    'descriptionMoreURL': ''
   # API
   # Teaset Toast API
   'Teaset Toast.message':
