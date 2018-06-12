@@ -34,8 +34,9 @@
     'prefix': 'NavigationBar'
     'body': """
       <NavigationBar
-        type="ios"
-        title="${1:标题}"
+        style={styles.$1}
+        type="${2:auto/ios/android}"
+        title="${3:标题}"
         leftView={<NavigationBar.BackButton title={Theme.backButtonTitle} />}
         rightView={
           <View style={{ flexDirection: 'row' }}>
@@ -109,6 +110,16 @@
     'prefix': 'Theme.navBarContentHeight'
     'body': """
       Theme.navBarContentHeight
+    """
+  'Teaset Theme.toastIconTintColor':
+    'prefix': 'Theme.toastIconTintColor'
+    'body': """
+      Theme.toastIconTintColor
+    """
+  'Teaset Theme.backButtonTitle':
+    'prefix': 'Theme.backButtonTitle'
+    'body': """
+      Theme.backButtonTitle
     """
   'Teaset Theme 修改默认配色方案':
     'prefix': 'Theme.themes'
