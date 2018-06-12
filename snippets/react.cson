@@ -3,22 +3,22 @@
     'prefix': "rcs"
     'body': """
       state = {
-        ${1}
+        $1
       }
     """
   "React: Component setState":
     'prefix': "thissetState"
     'body': """
-      this.setState(
-        ${1}
-      )
+      this.setState({
+        $1
+      })
     """
   "React: Component setState with Callback":
     'prefix': "thissetStateCallback"
     'body': """
       this.setState((prevState) => {
         return {
-          ${1}
+          $1
         }
       })
     """
