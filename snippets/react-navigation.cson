@@ -51,15 +51,20 @@
     """
     'description': '返回到堆栈中的第一个页面'
     'descriptionMoreURL': 'https://reactnavigation.org/docs/zh-Hans/hello-react-navigation.html#stack-navigator'
+  'React Navigation navigation':
+    'prefix': 'navigation'
+    'body': """
+      const { navigation } = this.props
+    """
   'React Navigation 读取页面组件中的参数':
     'prefix': 'statckParams'
     'body': """
-      this.props.navigation.state.params
+      ${1:this.props.}navigation.state.params
     """
   'React Navigation 读取页面组件中的参数 - 推荐':
     'prefix': 'stackGetParam'
     'body': """
-      this.props.navigation.getParam('$1')
+      ${1:this.props.}navigation.getParam('$1')
     """
   'React Navigation navigationOptions':
     'prefix': 'navigationOptions'
