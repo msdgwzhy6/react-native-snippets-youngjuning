@@ -18,6 +18,18 @@
         onChangeText={text => this.setState({ value: text })}
       />
     """
+  'Teaset Password Input Component':
+    'prefix': 'password'
+    'body': """
+      <Input
+        style={[styles.$1]}
+        size="lg"
+        secureTextEntry
+        placeholder="$3"
+        value={this.state.${2:value}}
+        onChangeText={text => this.setState({ value: text })}
+      />
+    """
   'Teaset Button Component':
     'prefix': 'Button'
     'body': """
