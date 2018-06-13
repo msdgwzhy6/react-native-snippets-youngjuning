@@ -52,17 +52,16 @@
         },
       })
 
-      ${1:MyComponent} = ({$2}) => (
+      export default ({$2}) => (
         ${3:<View style={styles.container\\}>
           ${4:<Text>${5:I am ${1:MyComponent}}</Text>}
         </View>}
       )
-      export default ${1:MyComponent}
       """
   'React Native Pure Function':
     'prefix': 'rnpf'
     'body': """
-      ${1:MyComponent} = ({$2}) => (
+      const ${1:MyComponent} = ({$2}) => (
         ${3:<View style={styles.container\\}>
           ${4:<Text>${5:I am ${1:MyComponent}}</Text>}
         </View>}
