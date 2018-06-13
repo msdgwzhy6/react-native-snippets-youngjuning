@@ -22,11 +22,11 @@
     'prefix': 'Button'
     'body': """
       <Button
-      style={[styles.$1]}
+        style={[styles.$1]}
         type="primary"
         size="lg"
         title="按钮"
-        onPress={() => { $2 }}
+        onPress={() => {$2}}
       />
     """
   # NavigationBar
