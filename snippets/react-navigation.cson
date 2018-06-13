@@ -61,3 +61,31 @@
     'body': """
       this.props.navigation.getParam('$1')
     """
+  'React Navigation navigationOptions':
+    'prefix': 'navigationOptions'
+    'body': """
+      static navigationOptions = ({ ${1:navigation,} ${2:navigationOptions,} ${3:screenProps}}) => ({
+        title: navigation.getParam('title', '$4'),
+        headerStyle: {
+          backgroundColor: '$5',
+        },
+        headerTintColor: '$6',
+      })
+    """
+  'React Navigation LogoTitle':
+    'prefix': 'LogoTitle'
+    'body': """
+      class LogoTitle extends React.Component {
+        render() {
+          return (
+            <Image
+              source={require('$1')}
+              style={{ width: ${2:30}, height: ${2:30} }}
+            />
+          )
+        }
+      }
+      static navigationOptions = ({ ${3:navigation,} ${4:navigationOptions,} ${5:screenProps}}) => ({
+        headerTitle: <LogoTitle />,
+      })
+    """
