@@ -89,3 +89,11 @@
         headerTitle: <LogoTitle />,
       })
     """
+  # props
+  'React Navigation headerRight':
+    'prefix': 'headerRight'
+    'body': """
+      headerRight: (
+        $1
+      )
+    """
