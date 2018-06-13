@@ -44,3 +44,10 @@
     """
     'description': '手动返回'
     'descriptionMoreURL': 'https://reactnavigation.org/docs/zh-Hans/navigating.html'
+  'React Navigation 返回到堆栈中的第一个页面':
+    'prefix': 'stackPopToTop'
+    'body': """
+      this.props.navigation.popToTop()
+    """
+    'description': '返回到堆栈中的第一个页面'
+    'descriptionMoreURL': 'https://reactnavigation.org/docs/zh-Hans/hello-react-navigation.html#stack-navigator'

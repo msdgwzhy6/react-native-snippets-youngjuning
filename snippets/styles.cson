@@ -84,6 +84,14 @@
     'body': """
       margin: $1,
     """
+  'margin-auto':
+    'prefix': 'marginAuto'
+    'body': """
+      marginTop: ${1:0},
+      marginRight: 'auto',
+      marginBottom: ${1:0},
+      marginLeft: 'auto',
+    """
   'marginTop':
     'prefix': 'marginTop'
     'body': """

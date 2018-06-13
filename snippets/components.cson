@@ -29,6 +29,15 @@
     'body': """
       <Image source={require('$1')}/>
     """
+  'React Native Network Image Component':
+    'prefix': 'imageNetwork'
+    'body': """
+      <Image
+        style={[styles.$1]}
+        source={{uri: 'https://facebook.github.io/react/img/logo_og.png'}}
+        style={{width: 400, height: 400}}
+    />
+    """
   'React Native TextInput Component':
     'prefix': 'TextInput'
     'body': """
