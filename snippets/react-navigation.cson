@@ -1,0 +1,46 @@
+'.source.jsx':
+  'React Navigation RootStack':
+    'prefix': 'ReactNavigation'
+    'body': """
+      import { createStackNavigator } from 'react-navigation'
+      const RootStack = createStackNavigator(
+        {
+          ${1:Home}: ${1:Home}Screen,
+        },
+        {
+          initialRouteName: '${1:Home}',
+          navigationOptions: {
+            headerStyle: {
+              backgroundColor: '${2:rgb(85, 163, 223)}',
+            },
+            headerTintColor: '${3:rgb(255,255,255)}',
+          },
+        },
+      )
+      export default () => (
+        <RootStack />
+      )
+    """
+    'description': '创建一个 stack navigator'
+    'descriptionMoreURL': 'https://reactnavigation.org/docs/zh-Hans/hello-react-navigation.html#stack-navigator'
+  'React Navigation 跳转到新页面':
+    'prefix': 'stackNavigate'
+    'body': """
+      this.props.navigation.navigate('$1')
+    """
+    'description': '跳转到新的页面'
+    'descriptionMoreURL': 'https://reactnavigation.org/docs/zh-Hans/navigating.html'
+  'React Navigation 添加新页面并跳转':
+    'prefix': 'stackPush'
+    'body': """
+      this.props.navigation.push('$1')
+    """
+    'description': '添加新页面并跳转'
+    'descriptionMoreURL': 'https://reactnavigation.org/docs/zh-Hans/navigating.html'
+  'React Navigation 手动返回':
+    'prefix': 'stackGoBack'
+    'body': """
+      this.props.navigation.goBack('$1')
+    """
+    'description': '手动返回'
+    'descriptionMoreURL': 'https://reactnavigation.org/docs/zh-Hans/navigating.html'

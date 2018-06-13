@@ -118,3 +118,9 @@
 
       }
     """
+  # 事件
+  'onPress':
+    'prefix': 'onPress'
+    'body': """
+      onPress={($1) => $2}
+    """
