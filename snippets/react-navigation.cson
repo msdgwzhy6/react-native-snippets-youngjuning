@@ -26,7 +26,7 @@
   'React Navigation 跳转到新页面':
     'prefix': 'stackNavigate'
     'body': """
-      this.props.navigation.navigate('$1')
+      this.props.navigation.navigate('$1', { ${2:/* params go here */} })
     """
     'description': '跳转到新的页面'
     'descriptionMoreURL': 'https://reactnavigation.org/docs/zh-Hans/navigating.html'
@@ -51,3 +51,13 @@
     """
     'description': '返回到堆栈中的第一个页面'
     'descriptionMoreURL': 'https://reactnavigation.org/docs/zh-Hans/hello-react-navigation.html#stack-navigator'
+  'React Navigation 读取页面组件中的参数':
+    'prefix': 'statckParams'
+    'body': """
+      this.props.navigation.state.params
+    """
+  'React Navigation 读取页面组件中的参数 - 推荐':
+    'prefix': 'stackGetParam'
+    'body': """
+      this.props.navigation.getParam('$1')
+    """
