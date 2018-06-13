@@ -52,31 +52,41 @@
         },
       })
 
-      export default ${1:MyComponent} = ({$2}) => (
+      ${1:MyComponent} = ({$2}) => (
         ${3:<View style={styles.container\\}>
           ${4:<Text>${5:I am ${1:MyComponent}}</Text>}
         </View>}
-      )$6
+      )
+      export default ${1:MyComponent}
       """
-  '不换行的箭头函数':
-    'prefix': 'afr'
+  'React Native Pure Function':
+    'prefix': 'rnpf'
     'body': """
-      ($1) => $2
+      ${1:MyComponent} = ({$2}) => (
+        ${3:<View style={styles.container\\}>
+          ${4:<Text>${5:I am ${1:MyComponent}}</Text>}
+        </View>}
+      )
     """
   'React Native class':
     'prefix': 'rnclass'
     'body': """
       class $1 extends Component {
-        // 一般来说，你需要在constructor中初始化state，然后在需要修改时调用setState方法。
         constructor(props) {
           super(props)
+          this.state = {$2}
         }
         render() {
           return (
-            $2
+            $3
           )
         }
       }
+    """
+  '不换行的箭头函数':
+    'prefix': 'afr'
+    'body': """
+      ($1) => $2
     """
   'React Native Class Constructor':
     'prefix': 'rncc'
@@ -108,4 +118,4 @@
       componentWillUnmount() {
 
       }
-    """  
+    """
