@@ -1,6 +1,6 @@
 # react-native-snippets-youngjuning
 
-> 目前支持原生组件、teaset，后续支持 antDesign Mobile
+> 目前支持原生组件、teaset、react-navigation，后续支持 antDesign Mobile
 
 ## TODO
 
