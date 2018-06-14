@@ -70,6 +70,64 @@
     """
     'description': '<Badge /> 徽章'
     'descriptionMoreURL': 'http://t.cn/RBS9a7P'
+  'Teaset Carousel Component':
+    'prefix': 'Carousel'
+    'body': """
+      <Carousel
+        style={{ height: 238 }}
+        control
+      >
+        <Image
+          style={{ width: 375, height: 238 }}
+          resizeMode="cover"
+          source={{ uri: 'https://i.loli.net/2018/06/14/5b224c61c88ad.jpg' }}
+        />
+        <Image
+          style={{ width: 375, height: 238 }}
+          resizeMode="cover"
+          source={{ uri: 'https://i.loli.net/2018/06/14/5b224c41b11e3.jpg' }}
+        />
+        <Image
+          style={{ width: 375, height: 238 }}
+          sresizeMode="cover"
+          source={{ uri: 'https://i.loli.net/2018/06/14/5b224c2796d93.jpg' }}
+        />
+      </Carousel>
+    """
+    'description': '<Carousel /> 走马灯'
+    'descriptionMoreURL': 'http://t.cn/RBS9j2X'
+  'Teaset Custom Carousel Component':
+    'prefix': 'CarouselCustom'
+    'body': """
+      <Carousel
+        style={{ height: 238 }}
+        control={
+          <Carousel.Control
+            style={{ alignItems: 'flex-end' }}
+            dot={<Text style={{ backgroundColor: 'rgba(0, 0, 0, 0)', color: '#5bc0de', padding: 4 }}>□</Text>}
+            activeDot={<Text style={{ backgroundColor: 'rgba(0, 0, 0, 0)', color: '#5bc0de', padding: 4 }}>■</Text>}
+          />
+        }
+      >
+        <Image
+          style={{ width: 375, height: 238 }}
+          resizeMode="cover"
+          source={{ uri: 'https://i.loli.net/2018/06/14/5b224c61c88ad.jpg' }}
+        />
+        <Image
+          style={{ width: 375, height: 238 }}
+          resizeMode="cover"
+          source={{ uri: 'https://i.loli.net/2018/06/14/5b224c41b11e3.jpg' }}
+        />
+        <Image
+          style={{ width: 375, height: 238 }}
+          resizeMode="cover"
+          source={{ uri: 'https://i.loli.net/2018/06/14/5b224c2796d93.jpg' }}
+        />
+      </Carousel>
+    """
+    'description': '<Carousel /> 走马灯'
+    'descriptionMoreURL': 'http://t.cn/RBS9j2X'
   ## API
   # ActionPopover
   'Teaset showActionPopover':
