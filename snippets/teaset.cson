@@ -62,6 +62,40 @@
     'body': """
       <NavigationBar.BackButton title={Theme.backButtonTitle} />
     """
+  # AlbumView
+  'Teaset showAlbumView':
+    'prefix': 'showAlbumView'
+    'body': """
+      showAlbumView(index) {
+        const curImg = this.state.curImg
+        curImg.measure((x, y, width, height, pageX, pageY) => {
+          const overlayView = (
+            <Overlay.PopView
+              style={{}}
+              containerStyle={{ flex: 1 }}
+              overlayOpacity={1}
+              type="custom"
+              customBounds={{
+                x: pageX,
+                y: pageY,
+                width,
+                height,
+              }}
+            >
+              <AlbumView
+                style={{ flex: 1 }}
+                control
+                images={this.state.images}
+                thumbs={this.state.thumbs}
+                defaultIndex={index}
+                onPress={() => this.state.fullImageView && this.state.fullImageView.close()}
+              />
+            </Overlay.PopView>
+          )
+          Overlay.show(overlayView)
+        })
+      }
+    """
   # Badge
   'Teaset Badge Component':
     'prefix': 'Badge'
@@ -149,7 +183,7 @@
         })
       }
     """
-  # ActionSheet
+  # ActionSheet API
   'Teaset showActionSheet':
     'prefix': 'showActionSheet'
     'body': """
@@ -163,38 +197,29 @@
         ActionSheet.show(items, cancelItem)
       }
     """
-  # AlbumView
-  'Teaset showAlbumView':
-    'prefix': 'showAlbumView'
+  # ActionSheet API
+  'Teaset Drawer':
+    'prefix': 'Drawer'
     'body': """
-      showAlbumView(index) {
-        const curImg = this.state.curImg
-        curImg.measure((x, y, width, height, pageX, pageY) => {
-          const overlayView = (
-            <Overlay.PopView
-              style={{}}
-              containerStyle={{ flex: 1 }}
-              overlayOpacity={1}
-              type="custom"
-              customBounds={{
-                x: pageX,
-                y: pageY,
-                width,
-                height,
-              }}
-            >
-              <AlbumView
-                style={{ flex: 1 }}
-                control
-                images={this.state.images}
-                thumbs={this.state.thumbs}
-                defaultIndex={index}
-                onPress={() => this.state.fullImageView && this.state.fullImageView.close()}
+      Drawer() {
+        const view = (
+          <View style={{ backgroundColor: Theme.defaultColor, height: 260, width: '100%' }}>
+            <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+              <Icon
+                name="close"
+                size={30}
+                color={Theme.primaryColor}
+                style={{ position: 'absolute', right: 8, top: 8 }}
+                onPress={() => { this.closeDrawer() }}
               />
-            </Overlay.PopView>
-          )
-          Overlay.show(overlayView)
-        })
+              <Label type="danger" size="xl" text="Drawer" />
+            </View>
+          </View>
+        )
+        this.state.drawer = Drawer.open(view, 'bottom')
+      }
+      closeDrawer() {
+        this.state.drawer.close()
       }
     """
   # Teaset Toast API
@@ -271,6 +296,11 @@
     'prefix': 'Theme.primaryColor'
     'body': """
       Theme.primaryColor
+    """
+  'Teaset Theme.dangerColor':
+    'prefix': 'Theme.dangerColor'
+    'body': """
+      Theme.dangerColor
     """
   'Teaset Theme 修改默认配色方案':
     'prefix': 'Theme.themes'

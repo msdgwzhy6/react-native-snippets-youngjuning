@@ -122,5 +122,5 @@
   'onPress':
     'prefix': 'onPress'
     'body': """
-      onPress={($1) => $2}
+      onPress={($1) => { $2 } }
     """
