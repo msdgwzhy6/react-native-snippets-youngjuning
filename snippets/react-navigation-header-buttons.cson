@@ -1,0 +1,17 @@
+'.source.jsx':
+  'react-navigation-header-buttons':
+    'prefix': 'headerButtons'
+    'body': """
+      import HeaderButtons from 'react-navigation-header-buttons'
+      import Icon from 'react-native-vector-icons/FontAwesome'
+      <HeaderButtons
+        IconComponent={Icon}
+        iconSize={23}
+        color="#fff"
+      >
+        <HeaderButtons.Item title="select" iconName="${1:edit}" />
+        <HeaderButtons.Item title="select" iconName="${2:search}" />
+      </HeaderButtons>
+    """
+    'description': 'react-navigation-header-buttons'
+    'descriptionMoreURL': 'https://github.com/vonovak/react-navigation-header-buttons'
