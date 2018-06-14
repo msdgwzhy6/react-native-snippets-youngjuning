@@ -15,8 +15,8 @@
   'React Native ScrollView Component':
     'prefix': 'ScrollView'
     'body': """
-      <ScrollView>
-        $1
+      <ScrollView ${1:horizontal}>
+        $2
       </ScrollView>
     """
   'React Native Text Component':

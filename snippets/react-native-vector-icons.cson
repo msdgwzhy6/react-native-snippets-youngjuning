@@ -66,6 +66,13 @@
         <Text>${1:rocket}</Text>
       </Icon>
     """
+  'vector-icons Button':
+    'prefix': 'IconButton'
+    'body': """
+      <Icon.Button name="${1:rocket}" size={${2:30}} color="${3:#900}">
+        <Text>${1:rocket}</Text>
+      </Icon.Button>
+    """
   'Icon.hasIcon':
     'prefix': 'Icon.hasIcon'
     'body': """
