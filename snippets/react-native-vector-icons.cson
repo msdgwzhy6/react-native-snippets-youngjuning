@@ -29,11 +29,6 @@
     'body': """
       import Icon from 'react-native-vector-icons/Ionicons'
     """
-  'react-native-vector-icons Ionicons':
-    'prefix': 'Ionicons'
-    'body': """
-      import Icon from 'react-native-vector-icons/Ionicons'
-    """
   'react-native-vector-icons MaterialIcons':
     'prefix': 'MaterialIcons'
     'body': """
