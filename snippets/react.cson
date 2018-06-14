@@ -22,3 +22,14 @@
         }
       })
     """
+  "React: Component":
+    'prefix': "rcomponent"
+    'body': """
+      class LogoTitle extends React.Component {
+        render() {
+          return (
+            $1
+          )
+        }
+      }
+    """
