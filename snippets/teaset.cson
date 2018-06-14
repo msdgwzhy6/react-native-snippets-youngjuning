@@ -7,6 +7,17 @@
         Button,
       } from 'teaset'
     """
+  'Teaset Button Component':
+    'prefix': 'Button'
+    'body': """
+      <Button
+        style={[styles.$1]}
+        type="primary"
+        size="lg"
+        title="按钮"
+        onPress={() => {$2}}
+      />
+    """
   'Teaset Input Component':
     'prefix': 'Input'
     'body': """
@@ -30,15 +41,15 @@
         onChangeText={text => this.setState({ value: text })}
       />
     """
-  'Teaset Button Component':
-    'prefix': 'Button'
+  'Teaset Input Component':
+    'prefix': 'Label'
     'body': """
-      <Button
-        style={[styles.$1]}
-        type="primary"
-        size="lg"
-        title="按钮"
-        onPress={() => {$2}}
+      <Lable
+        style={{$6}}
+        ${1:type="${2:title/detail/danger}}"
+        size="${3:md/lg}"
+        text= "$4"
+        numberOfLines="${5:1}"
       />
     """
   # NavigationBar
