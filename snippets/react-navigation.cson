@@ -69,7 +69,7 @@
   'React Navigation navigationOptions':
     'prefix': 'navigationOptions'
     'body': """
-      static navigationOptions = ({ ${1:navigation,} ${2:navigationOptions,} ${3:screenProps}}) => ({
+      static navigationOptions = ({ ${1:navigation}${2:, navigationOptions}${3:, screenProps}}) => ({
         title: navigation.getParam('title', '$4'),
         headerStyle: {
           backgroundColor: '$5',
@@ -102,3 +102,4 @@
         $1
       )
     """
+  

@@ -63,6 +63,7 @@
       <NavigationBar.BackButton title={Theme.backButtonTitle} />
     """
   # API
+
   # ActionPopover
   'Teaset showActionPopover':
     'prefix': 'showActionPopover'
@@ -81,6 +82,20 @@
             ${1:autoDirection},
           })
         })
+      }
+    """
+  # ActionSheet
+  'Teaset showActionSheet':
+    'prefix': 'showActionSheet'
+    'body': """
+      showActionSheet() {
+        const items = [
+          { title: 'Say hello', onPress: () => Alert.alert('Hello') },
+          { title: 'Do nothing' },
+          { title: 'Disabled', disabled: true },
+        ]
+        const cancelItem = { title: 'Cancel' }
+        ActionSheet.show(items, cancelItem)
       }
     """
   # Teaset Toast API
@@ -132,7 +147,6 @@
     'body': """
       Toast.hide(loading)
     """
-
   # Theme
   'Teaset Theme.statusBarHeight':
     'prefix': 'Theme.statusBarHeight'
