@@ -5,7 +5,7 @@
       import {
         Input,
         Button,
-      } form 'teaset'
+      } from 'teaset'
     """
   'Teaset Input Component':
     'prefix': 'Input'
