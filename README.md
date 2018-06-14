@@ -1,9 +1,9 @@
 # react-native-snippets-youngjuning
 
-## 支持度
+## Support
 
-- 原生组件
-- 样式
+- native components
+- style
 - teaset
 - react-navigation
 - react-native-vector-icons
@@ -11,5 +11,5 @@
 
 ## TODO
 
-- [ ] 支持teaset所有组件
-- [ ] 编写文档
+- [ ] Support all of teaset
+- [ ] Write Doc  conscientiously

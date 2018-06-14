@@ -34,8 +34,7 @@
       }
     """
   "React ref":
-    'prefix': "rcomponent"
+    'prefix': "ref"
     'body': """
-      ref={(c) => { ${1:this.twitter} = c }}
+      ref={(c) => { this.state.${1:twitter} = c }}
     """
-  

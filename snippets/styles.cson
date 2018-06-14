@@ -112,3 +112,28 @@
     'body': """
       marginBottom: $1,
     """
+  'position':
+    'prefix': 'position'
+    'body': """
+      position: 'absolute',
+    """
+  'top':
+    'prefix': 'top'
+    'body': """
+      top: ${1:0},
+    """
+  'right':
+    'prefix': 'right'
+    'body': """
+      right: ${1:0},
+    """
+  'bottom':
+    'prefix': 'bottom'
+    'body': """
+      bottom: ${1:0},
+    """
+  'left':
+    'prefix': 'left'
+    'body': """
+      left: ${1:0},
+    """
