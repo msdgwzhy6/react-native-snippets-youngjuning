@@ -62,8 +62,15 @@
     'body': """
       <NavigationBar.BackButton title={Theme.backButtonTitle} />
     """
-  # API
-
+  # Badge
+  'Teaset Badge Component':
+    'prefix': 'Badge'
+    'body': """
+      <Badge ${1:type="${2:square/dot}"} count={${3:66}} maxCount={${4:99}} />
+    """
+    'description': '<Badge /> 徽章'
+    'descriptionMoreURL': 'http://t.cn/RBS9a7P'
+  ## API
   # ActionPopover
   'Teaset showActionPopover':
     'prefix': 'showActionPopover'
