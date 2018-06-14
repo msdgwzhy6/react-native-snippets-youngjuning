@@ -41,7 +41,7 @@
         onChangeText={text => this.setState({ value: text })}
       />
     """
-  'Teaset Input Component':
+  'Teaset Label Component':
     'prefix': 'Label'
     'body': """
       <Lable
