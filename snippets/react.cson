@@ -33,3 +33,9 @@
         }
       }
     """
+  "React ref":
+    'prefix': "rcomponent"
+    'body': """
+      ref={(c) => { ${1:this.twitter} = c }}
+    """
+  

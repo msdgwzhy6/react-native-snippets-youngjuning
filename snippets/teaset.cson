@@ -63,6 +63,26 @@
       <NavigationBar.BackButton title={Theme.backButtonTitle} />
     """
   # API
+  # ActionPopover
+  'Teaset showActionPopover':
+    'prefix': 'showActionPopover'
+    'body': """
+      showActionPopover(view) {
+        view.measure((x, y, width, height, pageX, pageY) => {
+          const items = [
+            { title: 'Copy', onPress: () => Alert.alert('Copy') },
+            { title: 'Remove', onPress: () => Alert.alert('Remove') },
+            { title: 'Share', onPress: () => Alert.alert('Share') },
+          ]
+          ActionPopover.show({
+            x: pageX, y: pageY, width, height,
+          }, items,{
+            direction: 'up',
+            ${1:autoDirection},
+          })
+        })
+      }
+    """
   # Teaset Toast API
   'Teaset Toast.message':
     'prefix': 'Toast.message'
@@ -112,6 +132,7 @@
     'body': """
       Toast.hide(loading)
     """
+
   # Theme
   'Teaset Theme.statusBarHeight':
     'prefix': 'Theme.statusBarHeight'
