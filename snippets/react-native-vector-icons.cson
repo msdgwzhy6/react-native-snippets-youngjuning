@@ -57,13 +57,13 @@
   'vector-icons':
     'prefix': 'Icon'
     'body': """
-      <Icon name="${1:rocket}" size={$:{1:30}} color="${1:#900}">
+      <Icon name="${1:rocket}" size={${2:30}} color="${3:#900}">
     """
   'vector-icons with text':
-    'prefix': 'Icon'
+    'prefix': 'IconText'
     'body': """
-      <Icon name="${1:rocket}" size={$:{1:30}} color="${1:#900}">
-        <Text>rocket</Text>
+      <Icon name="${1:rocket}" size={${2:30}} color="${3:#900}">
+        <Text>${1:rocket}</Text>
       </Icon>
     """
   'Icon.hasIcon':
