@@ -36,7 +36,7 @@
   "React ref":
     'prefix': "ref"
     'body': """
-      ref={(c) => { this.state.${1:twitter} = c }}
+      ref={(c) => { this.${1:twitter} = c }}
     """
   'React 获取组件的一个prop getOneProp':
     'prefix': 'getOneProp'

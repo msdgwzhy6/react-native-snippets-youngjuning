@@ -278,6 +278,40 @@
         this.state.drawer.close()
       }
     """
+  'Teaset showMenu':
+    'prefix': 'showMenu'
+    'body': """
+      showMenu(view, direction, align) {
+        view.measure((x, y, width, height, pageX, pageY) => {
+          const items = [
+            {
+              title: 'Search',
+              icon: (<Icon name="rocket" size={20} color="#fff" />),
+              onPress: () => Alert.alert('Search'),
+            },
+            {
+              title: 'Edit',
+              icon: (<Icon name="rocket" size={20} color="#fff" />),
+              onPress: () => Alert.alert('Edit'),
+            },
+            {
+              title: 'Remove',
+              icon: (<Icon name="rocket" size={20} color="#fff" />),
+              onPress: () => Alert.alert('Remove'),
+            },
+          ]
+          Menu.show({
+            x: pageX, y: pageY, width, height,
+          }, items, {
+            direction,
+            align,
+            showArrow: true,
+          })
+        })
+      }
+    """
+    'description': 'Menu{} 菜单'
+    'descriptionMoreURL': 'http://t.cn/RB9Yhze'
   # Teaset Toast API
   'Teaset Toast.message':
     'prefix': 'Toast.message'
