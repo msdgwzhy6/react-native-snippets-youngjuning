@@ -2,10 +2,7 @@
   'import teaset':
     'prefix': 'teaset'
     'body': """
-      import {
-        Input,
-        Button,
-      } from 'teaset'
+      import { Theme } from 'teaset'
     """
   'Teaset Button Component':
     'prefix': 'Button'
@@ -253,7 +250,6 @@
         ActionSheet.show(items, cancelItem)
       }
     """
-  # ActionSheet API
   'Teaset Drawer':
     'prefix': 'Drawer'
     'body': """
@@ -360,6 +356,21 @@
     'prefix': 'Toast.hideLoading'
     'body': """
       Toast.hide(loading)
+    """
+  'Teaset showPullPicker':
+    'prefix': 'showPullPicker'
+    'body': """
+      showPullPicker() {
+        PullPicker.show(
+          '${1:Select item}',
+          this.items,
+          this.state.selectedIndex,
+          (item, index) => this.setState({
+            selectedIndex: index,
+            selectedItem: `当前选中：${item}`,
+          }),
+        )
+      }
     """
   # Theme
   'Teaset Theme.statusBarHeight':

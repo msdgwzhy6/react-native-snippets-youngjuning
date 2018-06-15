@@ -12,17 +12,17 @@
   'flexDirection':
     'prefix': 'flexDirection'
     'body': """
-      flexDirection: '$1',
+      flexDirection: '${1:row}',
     """
   'alignItems':
     'prefix': 'alignItems'
     'body': """
-      alignItems: '$1',
+      alignItems: '${1:center}',
     """
   'justifyContent':
     'prefix': 'justifyContent'
     'body': """
-      justifyContent: '$1',
+      justifyContent: '${1:center}',
     """
   'fontWeight':
     'prefix': 'fontWeight'
