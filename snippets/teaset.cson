@@ -404,6 +404,7 @@
     """
     'description': '<Stepper /> 步进器'
     'descriptionMoreURL': 'http://t.cn/RBCNWrV'
+  # TabView
   'Teaset TabView Component':
     'prefix': 'TabView'
     'body': """
@@ -427,6 +428,20 @@
     """
     'description': '<TabView /> 标签页'
     'descriptionMoreURL': 'http://t.cn/RBCN8RX'
+  'Teaset Wheel Component':
+    'prefix': 'Wheel'
+    'body': """
+      <View style={styles.container}>
+        <Wheel
+          style={{ height: 200, width: 80 }}
+          itemStyle={{ textAlign: 'center' }}
+          items={this.items}
+          onChange={(index) => { Alert.alert(`${this.items[index]}`) }}
+        />
+      </View>
+    """
+    'description': '<Wheel /> 滚轮'
+    'descriptionMoreURL': 'http://t.cn/RBCNsqp'
   ## API
   # ActionPopover
   'Teaset showActionPopover':
