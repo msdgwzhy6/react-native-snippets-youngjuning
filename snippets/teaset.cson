@@ -322,6 +322,7 @@
     """
     'description': '<ListRow.SwipeActionButton /> Props'
     'descriptionMoreURL': 'http://t.cn/RB9j0o3'
+  # Select
   'Teaset Select Component':
     'prefix': ''
     'body': """
@@ -365,6 +366,44 @@
     """
     'description': '<Select /> 选择框'
     'descriptionMoreURL': 'http://t.cn/RBCNCVg'
+  # Stepper
+  'Teaset Stepper Component':
+    'prefix': 'Stepper'
+    'body': """
+      <ListRow
+        title="${1:Title}"
+        titlePlace="left"
+        detail={<Stepper
+          defaultValue={0}
+          min={0}
+          max={10}
+          onChange={value => Alert.alert(`${value}`)}
+        />}
+        topSeparator="full"
+        bottomSeparator="full"
+      />
+    """
+    'description': '<Stepper /> 步进器'
+    'descriptionMoreURL': 'http://t.cn/RBCNWrV'
+  'Teaset StepperStep Component':
+    'prefix': 'StepperStep'
+    'body': """
+      <ListRow
+        title="${1；Title}"
+        titlePlace="left"
+        detail={<Stepper
+          defaultValue={0.8}
+          step={0.005}
+          valueFormat={v => `${(v * 100).toFixed(1)}%`}
+          valueStyle={{ minWidth: 60 }}
+          onChange={value => Alert.alert(`${value}`)}
+        />}
+        topSeparator="full"
+        bottomSeparator="full"
+      />
+    """
+    'description': '<Stepper /> 步进器'
+    'descriptionMoreURL': 'http://t.cn/RBCNWrV'
   ## API
   # ActionPopover
   'Teaset showActionPopover':
