@@ -38,6 +38,31 @@
         onChangeText={text => this.setState({ value: text })}
       />
     """
+  'Teaset SearchInput Component':
+    'prefix': 'SearchInput'
+    'body': """
+      <SearchInput
+        style={[{ width: 200 }, styles.search]}
+        placeholder="${1:Enter text}"
+        ${2:editable={false}}
+        ${disabled}
+      />
+    """
+    'description': '<SearchInput /> 搜索输入框'
+    'descriptionMoreURL': 'http://t.cn/RB9kGsb'
+  'Teaset Custom SearchInput Component':
+    'prefix': 'SearchInputCustom'
+    'body': """
+      <SearchInput
+        style={{width: 200, height: 40, backgroundColor: '#fcf8e3', borderColor: '#8a6d3b'}}
+        inputStyle={{color: '#8a6d3b', fontSize: 18}}
+        iconSize={15}
+        value={this.state.valueCustom}
+        placeholder='Custom'
+        placeholderTextColor='#aaa'
+        onChangeText={text => this.setState({valueCustom: text})}
+      />
+    """
   'Teaset Label Component':
     'prefix': 'Label'
     'body': """
