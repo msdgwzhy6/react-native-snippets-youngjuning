@@ -538,6 +538,21 @@
     """
     'description': 'Menu{} 菜单'
     'descriptionMoreURL': 'http://t.cn/RB9Yhze'
+  # ModalIndicator API
+  'Teaset ModalIndicator.show()':
+    'prefix': 'ModalIndicator.show'
+    'body': """
+      ModalIndicator.show(${1:Text})
+    """
+    'description': 'ModalIndicator{} 模态指示器'
+    'descriptionMoreURL': 'http://t.cn/RB9YcOv'
+  'Teaset ModalIndicator.hide()':
+    'prefix': 'ModalIndicator.hide'
+    'body': """
+      ModalIndicator.hide()
+    """
+    'description': 'ModalIndicator{} 模态指示器'
+    'descriptionMoreURL': 'http://t.cn/RB9YcOv'
   # Teaset Toast API
   'Teaset Toast.message':
     'prefix': 'Toast.message'
