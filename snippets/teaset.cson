@@ -116,6 +116,7 @@
     """
     'description': '<Badge /> 徽章'
     'descriptionMoreURL': 'http://t.cn/RBS9a7P'
+  # Carousel
   'Teaset Carousel Component':
     'prefix': 'Carousel'
     'body': """
@@ -142,6 +143,7 @@
     """
     'description': '<Carousel /> 走马灯'
     'descriptionMoreURL': 'http://t.cn/RBS9j2X'
+  # Custom
   'Teaset Custom Carousel Component':
     'prefix': 'CarouselCustom'
     'body': """
@@ -174,6 +176,48 @@
     """
     'description': '<Carousel /> 走马灯'
     'descriptionMoreURL': 'http://t.cn/RBS9j2X'
+  # ListRow
+  'Teaset ListRow Component':
+    'prefix': 'ListRow'
+    'body': """
+      <ListRow
+        title="${1:Title}"
+        titlePlace="${2:left/top/none/}"
+        detail="${3:detail}"
+        icon={(<Icon name="${4:rocket}" size={${5:30}} color="${6:#000}" />)}
+        topSeparator="${7:indent/full/none}"
+        bottomSeparator="${7:indent/full/none}"
+        onPress={(${8:indicator}) => { Alert.alert('Click') }}
+      />
+    """
+    'description': '<ListRow /> 列表行'
+    'descriptionMoreURL': 'http://t.cn/RB9OSBH'
+  'Teaset ListRow.SwipeActionButton Prop':
+    'prefix': 'ListRow.SwipeActionButton'
+    'body': """
+      <ListRow
+        title="${1:Title}"
+        titlePlace="${2:left/top/none/}"
+        detail="${3:detail}"
+        icon={(<Icon name="${4:rocket}" size={${5:30}} color="${6:#000}" />)}
+        topSeparator="${7:indent/full/none}"
+        bottomSeparator="${7:indent/full/none}"
+        swipeActions={[
+          <ListRow.SwipeActionButton
+            title="Cancel"
+            onPress={() => { Alert.alert('Cancel') }}
+          />,
+          <ListRow.SwipeActionButton
+            title="Remove"
+            type="danger"
+            onPress={() => { Alert.alert('Remove') }}
+          />,
+        ]}
+        onPress={(${8:indicator}) => { Alert.alert('Click') }}
+      />
+    """
+    'description': '<ListRow.SwipeActionButton /> Props'
+    'descriptionMoreURL': 'http://t.cn/RB9j0o3'
   ## API
   # ActionPopover
   'Teaset showActionPopover':

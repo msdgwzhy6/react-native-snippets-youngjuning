@@ -19,13 +19,9 @@
       export default class ${1:MyComponent} extends Component {
         constructor(props) {
           super(props)
-          this.state = {
-            $2
-          }
+          this.state = {$2}
         }
-        componentDidMount() {
-
-        }
+        ${3:componentDidMount() {$4}}
         render() {
           return (
             <View style={styles.container}>
@@ -49,6 +45,8 @@
       const styles = StyleSheet.create({
         container: {
           flex: 1,
+          justifyContent: 'center',
+          alignItems: 'center',
         },
       })
 
@@ -101,21 +99,21 @@
     'prefix': 'willmount'
     'body': """
       componentWillMount() {
-
+        ${1:coding}
       }
     """
   'componentDidMount':
     'prefix': 'didmount'
     'body': """
       componentDidMount() {
-
+        ${1:coding}
       }
     """
   'componentWillUnmount':
     'prefix': 'willUnmount'
     'body': """
       componentWillUnmount() {
-
+        ${1:coding}
       }
     """
   # 事件
