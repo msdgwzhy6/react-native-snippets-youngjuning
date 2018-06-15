@@ -542,7 +542,7 @@
   'Teaset ModalIndicator.show()':
     'prefix': 'ModalIndicator.show'
     'body': """
-      ModalIndicator.show(${1:Text})
+      ModalIndicator.show('${1:Text}')
     """
     'description': 'ModalIndicator{} 模态指示器'
     'descriptionMoreURL': 'http://t.cn/RB9YcOv'
