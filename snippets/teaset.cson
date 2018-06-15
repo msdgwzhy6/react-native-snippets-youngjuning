@@ -63,10 +63,11 @@
         onChangeText={text => this.setState({valueCustom: text})}
       />
     """
+  # Label
   'Teaset Label Component':
     'prefix': 'Label'
     'body': """
-      <Lable
+      <Label
         style={{$6}}
         ${1:type="${2:title/detail/danger}}"
         size="${3:md/lg}"
@@ -74,6 +75,8 @@
         numberOfLines="${5:1}"
       />
     """
+    'description': '<Label /> 标签'
+    'descriptionMoreURL': 'http://t.cn/RBoAwiv'
   # page
   'Teaset Projector Component':
     'prefix': 'Projector'
