@@ -12,7 +12,7 @@
         type="primary"
         size="lg"
         title="按钮"
-        onPress={() => {$2}}
+        onPress={() => { $2 }}
       />
     """
   'Teaset Input Component':
@@ -357,6 +357,26 @@
     'body': """
       Toast.hide(loading)
     """
+  # PopoverPicker
+  'Teaset showPopoverPicker':
+    'prefix': 'showPopoverPicker'
+    'body': """
+      showPopoverPicker(view) {
+        view.measure((x, y, width, height, pageX, pageY) => {
+          PopoverPicker.show(
+            {
+              x: pageX, y: pageY, width, height,
+            },
+            this.items,
+            this.state.selectedIndex,
+            (item, index) => this.setState({ selectedIndex: index }),
+          )
+        })
+      }
+    """
+    'description': 'PopoverPicker{} 气泡选择器'
+    'descriptionMoreURL': 'http://t.cn/RBCzN8u'
+  # PullPicker
   'Teaset showPullPicker':
     'prefix': 'showPullPicker'
     'body': """
