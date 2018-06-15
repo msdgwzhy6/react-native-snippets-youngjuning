@@ -72,7 +72,7 @@
         ${1:type="${2:title/detail/danger}}"
         size="${3:md/lg}"
         text= "${4:Label Text}"
-        ${5:numberOfLines="${6:1}"}
+        ${5:numberOfLines={${6:1}}}
       />
     """
     'description': '<Label /> 标签'
