@@ -404,6 +404,29 @@
     """
     'description': '<Stepper /> 步进器'
     'descriptionMoreURL': 'http://t.cn/RBCNWrV'
+  'Teaset TabView Component':
+    'prefix': 'TabView'
+    'body': """
+      <TabView style={styles.container} type="${1:projector/carousel}">
+        <TabView.Sheet
+          title="${2:Page1}"
+          icon={require('../../icons/home.png')}
+          activeIcon={require('../../icons/home_active.png')}
+        >
+          <${2:Page1} />
+        </TabView.Sheet>
+        <TabView.Sheet
+          title="${3:page2}"
+          icon={require('../../icons/me.png')}
+          activeIcon={require('../../icons/me_active.png')}
+          badge={1}
+        >
+          <${3:page2} />
+        </TabView.Sheet>
+      </TabView>
+    """
+    'description': '<TabView /> 标签页'
+    'descriptionMoreURL': 'http://t.cn/RBCN8RX'
   ## API
   # ActionPopover
   'Teaset showActionPopover':
