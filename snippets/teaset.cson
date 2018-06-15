@@ -322,6 +322,49 @@
     """
     'description': '<ListRow.SwipeActionButton /> Props'
     'descriptionMoreURL': 'http://t.cn/RB9j0o3'
+  'Teaset Select Component':
+    'prefix': ''
+    'body': """
+      <Select
+        style={{ width: 200 }}
+        value={this.state.value}
+        items={this.${1:items}}
+        placeholder="${2:Select item}"
+        pickerTitle="${3:Select item}"
+        onSelected={(item, index) => this.setState({ value: item })}
+      />
+    """
+    'description': '<Select /> 选择框'
+    'descriptionMoreURL': 'http://t.cn/RBCNCVg'
+  'Teaset SelectPopover Component':
+    'prefix': 'SelectPopover'
+    'body': """
+      <Select
+        style={{ width: 200 }}
+        value={this.state.value}
+        placeholder="${2:Select item}"
+        items={this.${1:items}}
+        pickerType="popover"
+        onSelected={(item, index) => this.setState({ value: item })}
+      />
+    """
+    'description': '<Select /> 选择框'
+    'descriptionMoreURL': 'http://t.cn/RBCNCVg'
+  'Teaset SelectPull Component':
+    'prefix': 'SelectPull'
+    'body': """
+      <Select
+        style={{ width: 200 }}
+        value={this.state.value}
+        placeholder="${1:Select item}"
+        items={this.${2:items}}
+        pickerType="pull"
+        pickerTitle="${3:Select item}"
+        onSelected={(item, index) => this.setState({ value: item })}
+      />
+    """
+    'description': '<Select /> 选择框'
+    'descriptionMoreURL': 'http://t.cn/RBCNCVg'
   ## API
   # ActionPopover
   'Teaset showActionPopover':
