@@ -7,7 +7,7 @@
   'react-native-vector-icons EvilIcons':
     'prefix': 'EvilIcons'
     'body': """
-      import Icon from 'react-native-vector-icons/EvilIcons'
+      import EvilIcons from 'react-native-vector-icons/EvilIcons'
     """
   'react-native-vector-icons Feather':
     'prefix': 'Feather'
@@ -27,12 +27,12 @@
   'react-native-vector-icons Ionicons':
     'prefix': 'Ionicons'
     'body': """
-      import Icon from 'react-native-vector-icons/Ionicons'
+      import Ionicons from 'react-native-vector-icons/Ionicons'
     """
   'react-native-vector-icons MaterialIcons':
     'prefix': 'MaterialIcons'
     'body': """
-      import Icon from 'react-native-vector-icons/MaterialIcons'
+      import MaterialIcons from 'react-native-vector-icons/MaterialIcons'
     """
   'react-native-vector-icons MaterialCommunityIcons':
     'prefix': 'MaterialCommunityIcons'
@@ -42,7 +42,7 @@
   'react-native-vector-icons Octicons':
     'prefix': 'Octicons'
     'body': """
-      import Icon from 'react-native-vector-icons/Octicons'
+      import Octicons from 'react-native-vector-icons/Octicons'
     """
   'react-native-vector-icons Zocial':
     'prefix': 'Zocial'

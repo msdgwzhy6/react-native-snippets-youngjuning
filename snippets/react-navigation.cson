@@ -1,11 +1,20 @@
 '.source.jsx':
-  'React Navigation RootStack':
+  'React Navigation createStackNavigator':
+    'prefix': 'createStackNavigator'
+    'body': """
+      import { createStackNavigator } from 'react-navigation'
+      export default createBottomTabNavigator({
+        Home: HomeScreen,
+        Settings: SettingsScreen,
+      })
+    """
+  'React Navigation createBottomTabNavigator':
     'prefix': 'ReactNavigation'
     'body': """
       import { createStackNavigator } from 'react-navigation'
       const RootStack = createStackNavigator(
         {
-          ${1:Home}: ${1:Home}Screen,
+          ${1:Home}
         },
         {
           initialRouteName: '${1:Home}',
