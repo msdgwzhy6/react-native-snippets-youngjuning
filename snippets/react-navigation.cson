@@ -1,15 +1,11 @@
-'.source.jsx':
+'.source.js.jsx':
+  'React Navigation':
+    'prefix': 'react-navigation'
+    'body': """
+      import { createBottomTabNavigator, createMaterialTopTabNavigator, createStackNavigator } from 'react-navigation'
+    """
   'React Navigation createStackNavigator':
     'prefix': 'createStackNavigator'
-    'body': """
-      import { createStackNavigator } from 'react-navigation'
-      export default createBottomTabNavigator({
-        Home: HomeScreen,
-        Settings: SettingsScreen,
-      })
-    """
-  'React Navigation createBottomTabNavigator':
-    'prefix': 'ReactNavigation'
     'body': """
       import { createStackNavigator } from 'react-navigation'
       const RootStack = createStackNavigator(
@@ -32,6 +28,82 @@
     """
     'description': '创建一个 stack navigator'
     'descriptionMoreURL': 'https://reactnavigation.org/docs/zh-Hans/hello-react-navigation.html#stack-navigator'
+  'React Navigation createBottomTabNavigator':
+    'prefix': 'createBottomTabNavigator'
+    'body': """
+      import { createBottomTabNavigator, createStackNavigator } from 'react-navigation'
+      const HomeStack = createStackNavigator(
+        {
+          Home,
+        },
+        {
+          initialRouteName: 'Home',
+          navigationOptions: {
+            title: '首页',
+            headerTitle: '首页',
+            headerStyle: {
+              backgroundColor: Theme.primaryColor,
+            },
+            headerTintColor: 'rgb(255,255,255)',
+          },
+        },
+      )
+      const MineStack = createStackNavigator(
+        {
+          Mine,
+        },
+        {
+          initialRouteName: 'Mine',
+          navigationOptions: {
+            title: '我的',
+            headerTitle: '我的',
+            headerStyle: {
+              backgroundColor: Theme.primaryColor,
+            },
+            headerTintColor: 'rgb(255,255,255)',
+          },
+        },
+      )
+      export default createBottomTabNavigator(
+        {
+          Home: HomeStack,
+          Mine: MineStack,
+        },
+        {
+          initialRouteName: 'Home',
+          tabBarOptions: {
+            activeTintColor: Theme.primaryColor ? Theme.primaryColor : 'tomato',
+            inactiveTintColor: 'gray',
+          },
+          navigationOptions: ({ navigation }) => ({
+            tabBarIcon: ({ focused, tintColor }) => {
+              const { routeName } = navigation.state
+              let iconName
+              if (routeName === 'Home') {
+                iconName = 'home'
+              } else if (routeName === 'Mine') {
+                iconName = 'heart'
+              }
+              return <Icon name={iconName} size={25} color={tintColor} />
+            },
+          }),
+        },
+      )
+    """
+    'description': '创建一个 stack navigator'
+    'descriptionMoreURL': 'https://reactnavigation.org/docs/zh-Hans/hello-react-navigation.html#stack-navigator'
+  'React Navigation createMaterialTopTabNavigator':
+    'prefix': 'createMaterialTopTabNavigator'
+    'body': """
+      import { createMaterialTopTabNavigator } from 'react-navigation'
+      export default createMaterialTopTabNavigator({
+        $1
+      }, {
+        initialRouteName: '$1',
+      })
+    """
+    'description': 'createMaterialTopTabNavigator'
+    'descriptionMoreURL': 'http://t.cn/RBmJije'
   'React Navigation 跳转到新页面':
     'prefix': 'stackNavigate'
     'body': """
