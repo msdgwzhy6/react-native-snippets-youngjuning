@@ -2,18 +2,16 @@
   'DatePicker':
     'prefix': 'DatePicker'
     'body': """
-      <List>
-        <DatePicker
-          value={this.state.value}
-          mode="date"
-          minDate={new Date(2015, 7, 6)}
-          maxDate={new Date(2026, 11, 3)}
-          onChange={this.onChange}
-          format="YYYY-MM-DD"
-        >
-          <List.Item arrow="horizontal">Select Date</List.Item>
-        </DatePicker>
-      </List>
+      <DatePicker
+        mode="${1:date/time/datetime/year/month}"
+        value={this.state.${2:value}}
+        minDate={new Date(2000, 1, 1)}
+        maxDate={new Date(2030, 1, 1)}
+        onChange={$2 => this.setState({$2})}
+        extra="${3:请选择}"
+      >
+        <List.Item arrow="horizontal">Select Date</List.Item>
+      </DatePicker>
     """
     'description': 'DatePicker 日期选择'
     'descriptionMoreURL': 'http://t.cn/RBnYX7E'
