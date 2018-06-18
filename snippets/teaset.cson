@@ -5,7 +5,7 @@
       import { Theme } from 'teaset'
     """
   'Teaset Button Component':
-    'prefix': 'Button'
+    'prefix': 'tButton'
     'body': """
       <Button
         style={[styles.$1]}
@@ -16,7 +16,7 @@
       />
     """
   'Teaset Input Component':
-    'prefix': 'Input'
+    'prefix': 'tInput'
     'body': """
       <Input
         style={[styles.$1]}
@@ -27,7 +27,7 @@
       />
     """
   'Teaset Password Input Component':
-    'prefix': 'password'
+    'prefix': 'tPassword'
     'body': """
       <Input
         style={[styles.$1]}
@@ -39,7 +39,7 @@
       />
     """
   'Teaset SearchInput Component':
-    'prefix': 'SearchInput'
+    'prefix': 'tSearchInput'
     'body': """
       <SearchInput
         style={[{ width: 200 }, styles.search]}
@@ -51,7 +51,7 @@
     'description': '<SearchInput /> 搜索输入框'
     'descriptionMoreURL': 'http://t.cn/RB9kGsb'
   'Teaset Custom SearchInput Component':
-    'prefix': 'SearchInputCustom'
+    'prefix': 'tSearchInputCustom'
     'body': """
       <SearchInput
         style={{width: 200, height: 40, backgroundColor: '#fcf8e3', borderColor: '#8a6d3b'}}
@@ -65,7 +65,7 @@
     """
   # Label
   'Teaset Label Component':
-    'prefix': 'Label'
+    'prefix': 'tLabel'
     'body': """
       <Label
         style={{$1}}
@@ -77,9 +77,9 @@
     """
     'description': '<Label /> 标签'
     'descriptionMoreURL': 'http://t.cn/RBoAwiv'
-  # page
+  # Projector
   'Teaset Projector Component':
-    'prefix': 'Projector'
+    'prefix': 'tProjector'
     'body': """
       // Projector 组件定义一个幻灯机组件, 这是一个自动保持状态的多页显示组件, 并且具有视图缓存功能的, 切换页面就像切换幻灯机胶片一样, 原页面的内容和状态不会消失, 再切换回这个页面时原样呈现而无需重新渲染。
       import React, { Component } from 'react'
@@ -161,7 +161,7 @@
     'descriptionMoreURL': 'http://t.cn/RBCzEgx'
   # NavigationBar
   'Teaset NavigationBar Component':
-    'prefix': 'NavigationBar'
+    'prefix': 'tNavigationBar'
     'body': """
       <NavigationBar
         style={styles.$1}
@@ -176,48 +176,13 @@
       />
     """
   'Teaset NavigationBar.BackButton':
-    'prefix': 'NavigationBar.BackButton'
+    'prefix': 'tNavigationBar.BackButton'
     'body': """
       <NavigationBar.BackButton title={Theme.backButtonTitle} />
     """
-  # AlbumView
-  'Teaset showAlbumView':
-    'prefix': 'showAlbumView'
-    'body': """
-      showAlbumView(index) {
-        const curImg = this.state.curImg
-        curImg.measure((x, y, width, height, pageX, pageY) => {
-          const overlayView = (
-            <Overlay.PopView
-              style={{}}
-              containerStyle={{ flex: 1 }}
-              overlayOpacity={1}
-              type="custom"
-              customBounds={{
-                x: pageX,
-                y: pageY,
-                width,
-                height,
-              }}
-              ref={(c) => { this.state.fullImageView = c }}
-            >
-              <AlbumView
-                style={{ flex: 1 }}
-                control
-                images={this.state.images}
-                thumbs={this.state.thumbs}
-                defaultIndex={index}
-                onPress={() => this.state.fullImageView && this.state.fullImageView.close()}
-              />
-            </Overlay.PopView>
-          )
-          Overlay.show(overlayView)
-        })
-      }
-    """
   # Badge
   'Teaset Badge Component':
-    'prefix': 'Badge'
+    'prefix': 'tBadge'
     'body': """
       <Badge ${1:type="${2:square/dot}"} count={${3:66}} maxCount={${4:99}} />
     """
@@ -225,7 +190,7 @@
     'descriptionMoreURL': 'http://t.cn/RBS9a7P'
   # Carousel
   'Teaset Carousel Component':
-    'prefix': 'Carousel'
+    'prefix': 'tCarousel'
     'body': """
       <Carousel
         style={{ height: 238 }}
@@ -252,7 +217,7 @@
     'descriptionMoreURL': 'http://t.cn/RBS9j2X'
   # Custom
   'Teaset Custom Carousel Component':
-    'prefix': 'CarouselCustom'
+    'prefix': 'tCarouselCustom'
     'body': """
       <Carousel
         style={{ height: 238 }}
@@ -285,7 +250,7 @@
     'descriptionMoreURL': 'http://t.cn/RBS9j2X'
   # ListRow
   'Teaset ListRow Component':
-    'prefix': 'ListRow'
+    'prefix': 'tListRow'
     'body': """
       <ListRow
         title="${1:Title}"
@@ -300,7 +265,7 @@
     'description': '<ListRow /> 列表行'
     'descriptionMoreURL': 'http://t.cn/RB9OSBH'
   'Teaset ListRow.SwipeActionButton Prop':
-    'prefix': 'ListRow.SwipeActionButton'
+    'prefix': 'tListRow.SwipeActionButton'
     'body': """
       <ListRow
         title="${1:Title}"
@@ -327,7 +292,7 @@
     'descriptionMoreURL': 'http://t.cn/RB9j0o3'
   # Select
   'Teaset Select Component':
-    'prefix': ''
+    'prefix': 'tSelect'
     'body': """
       <Select
         style={{ width: 200 }}
@@ -341,7 +306,7 @@
     'description': '<Select /> 选择框'
     'descriptionMoreURL': 'http://t.cn/RBCNCVg'
   'Teaset SelectPopover Component':
-    'prefix': 'SelectPopover'
+    'prefix': 'tSelectPopover'
     'body': """
       <Select
         style={{ width: 200 }}
@@ -355,7 +320,7 @@
     'description': '<Select /> 选择框'
     'descriptionMoreURL': 'http://t.cn/RBCNCVg'
   'Teaset SelectPull Component':
-    'prefix': 'SelectPull'
+    'prefix': 'tSelectPull'
     'body': """
       <Select
         style={{ width: 200 }}
@@ -371,7 +336,7 @@
     'descriptionMoreURL': 'http://t.cn/RBCNCVg'
   # Stepper
   'Teaset Stepper Component':
-    'prefix': 'Stepper'
+    'prefix': 'tStepper'
     'body': """
       <ListRow
         title="${1:Title}"
@@ -389,7 +354,7 @@
     'description': '<Stepper /> 步进器'
     'descriptionMoreURL': 'http://t.cn/RBCNWrV'
   'Teaset StepperStep Component':
-    'prefix': 'StepperStep'
+    'prefix': 'tStepperStep'
     'body': """
       <ListRow
         title="${1；Title}"
@@ -409,7 +374,7 @@
     'descriptionMoreURL': 'http://t.cn/RBCNWrV'
   # TabView
   'Teaset TabView Component':
-    'prefix': 'TabView'
+    'prefix': 'tTabView'
     'body': """
       <TabView style={styles.container} type="${1:projector/carousel}">
         <TabView.Sheet
@@ -432,7 +397,7 @@
     'description': '<TabView /> 标签页'
     'descriptionMoreURL': 'http://t.cn/RBCN8RX'
   'Teaset Wheel Component':
-    'prefix': 'Wheel'
+    'prefix': 'tWheel'
     'body': """
       <View style={styles.container}>
         <Wheel
@@ -446,9 +411,44 @@
     'description': '<Wheel /> 滚轮'
     'descriptionMoreURL': 'http://t.cn/RBCNsqp'
   ## API
+  # AlbumView
+  'Teaset showAlbumView':
+    'prefix': 'tshowAlbumView'
+    'body': """
+      showAlbumView(index) {
+        const curImg = this.state.curImg
+        curImg.measure((x, y, width, height, pageX, pageY) => {
+          const overlayView = (
+            <Overlay.PopView
+              style={{}}
+              containerStyle={{ flex: 1 }}
+              overlayOpacity={1}
+              type="custom"
+              customBounds={{
+                x: pageX,
+                y: pageY,
+                width,
+                height,
+              }}
+              ref={(c) => { this.state.fullImageView = c }}
+            >
+              <AlbumView
+                style={{ flex: 1 }}
+                control
+                images={this.state.images}
+                thumbs={this.state.thumbs}
+                defaultIndex={index}
+                onPress={() => this.state.fullImageView && this.state.fullImageView.close()}
+              />
+            </Overlay.PopView>
+          )
+          Overlay.show(overlayView)
+        })
+      }
+    """
   # ActionPopover
   'Teaset showActionPopover':
-    'prefix': 'showActionPopover'
+    'prefix': 'tshowActionPopover'
     'body': """
       showActionPopover(view) {
         view.measure((x, y, width, height, pageX, pageY) => {
@@ -466,9 +466,9 @@
         })
       }
     """
-  # ActionSheet API
+  # ActionSheet
   'Teaset showActionSheet':
-    'prefix': 'showActionSheet'
+    'prefix': 'tshowActionSheet'
     'body': """
       showActionSheet() {
         const items = [
@@ -480,8 +480,9 @@
         ActionSheet.show(items, cancelItem)
       }
     """
+  # Drawer
   'Teaset Drawer':
-    'prefix': 'Drawer'
+    'prefix': 'tDrawer'
     'body': """
       Drawer() {
         const view = (
@@ -504,8 +505,9 @@
         this.state.drawer.close()
       }
     """
+  # Menu
   'Teaset showMenu':
-    'prefix': 'showMenu'
+    'prefix': 'tshowMenu'
     'body': """
       showMenu(view, direction, align) {
         view.measure((x, y, width, height, pageX, pageY) => {
@@ -538,16 +540,16 @@
     """
     'description': 'Menu{} 菜单'
     'descriptionMoreURL': 'http://t.cn/RB9Yhze'
-  # ModalIndicator API
+  # ModalIndicator
   'Teaset ModalIndicator.show()':
-    'prefix': 'ModalIndicator.show'
+    'prefix': 'tModalIndicator.show'
     'body': """
       ModalIndicator.show('${1:Text}')
     """
     'description': 'ModalIndicator{} 模态指示器'
     'descriptionMoreURL': 'http://t.cn/RB9YcOv'
   'Teaset ModalIndicator.hide()':
-    'prefix': 'ModalIndicator.hide'
+    'prefix': 'tModalIndicator.hide'
     'body': """
       ModalIndicator.hide()
     """
@@ -555,42 +557,42 @@
     'descriptionMoreURL': 'http://t.cn/RB9YcOv'
   # Teaset Toast API
   'Teaset Toast.message':
-    'prefix': 'Toast.message'
+    'prefix': 'tToast.message'
     'body': """
       Toast.message('${1:Toast message}')
     """
   'Teaset Toast.success':
-    'prefix': 'Toast.success'
+    'prefix': 'tToast.success'
     'body': """
       Toast.success('${1:Toast success}')
     """
   'Teaset Toast.fail':
-    'prefix': 'Toast.fail'
+    'prefix': 'tToast.fail'
     'body': """
       Toast.fail('${1:Toast fail}')
     """
   'Teaset Toast.smile':
-    'prefix': 'Toast.smile'
+    'prefix': 'tToast.smile'
     'body': """
       Toast.smile('${1:Toast smile}')
     """
   'Teaset Toast.sad':
-    'prefix': 'Toast.sad'
+    'prefix': 'tToast.sad'
     'body': """
       Toast.sad('${1:Toast sad}')
     """
   'Teaset Toast.info':
-    'prefix': 'Toast.info'
+    'prefix': 'tToast.info'
     'body': """
       Toast.info('${1:Toast info}')
     """
   'Teaset Toast.stop':
-    'prefix': 'Toast.stop'
+    'prefix': 'tToast.stop'
     'body': """
       Toast.stop('${1:Toast stop}')
     """
   'Teaset Toast.showLoading':
-    'prefix': 'Toast.showLoading'
+    'prefix': 'tToast.showLoading'
     'body': """
       const loading = Toast.show({
         text: '$1',
@@ -598,13 +600,13 @@
       })
     """
   'Teaset Toast.hideLoading':
-    'prefix': 'Toast.hideLoading'
+    'prefix': 'tToast.hideLoading'
     'body': """
       Toast.hide(loading)
     """
   # PopoverPicker
   'Teaset showPopoverPicker':
-    'prefix': 'showPopoverPicker'
+    'prefix': 'tshowPopoverPicker'
     'body': """
       showPopoverPicker(view) {
         view.measure((x, y, width, height, pageX, pageY) => {
@@ -623,7 +625,7 @@
     'descriptionMoreURL': 'http://t.cn/RBCzN8u'
   # PullPicker
   'Teaset showPullPicker':
-    'prefix': 'showPullPicker'
+    'prefix': 'tshowPullPicker'
     'body': """
       showPullPicker() {
         PullPicker.show(
@@ -639,42 +641,42 @@
     """
   # Theme
   'Teaset Theme.statusBarHeight':
-    'prefix': 'Theme.statusBarHeight'
+    'prefix': 'tTheme.statusBarHeight'
     'body': """
       Theme.statusBarHeight
     """
   'Teaset Theme.navBarContentHeight':
-    'prefix': 'Theme.navBarContentHeight'
+    'prefix': 'tTheme.navBarContentHeight'
     'body': """
       Theme.navBarContentHeight
     """
   'Teaset Theme.toastIconTintColor':
-    'prefix': 'Theme.toastIconTintColor'
+    'prefix': 'tTheme.toastIconTintColor'
     'body': """
       Theme.toastIconTintColor
     """
   'Teaset Theme.backButtonTitle':
-    'prefix': 'Theme.backButtonTitle'
+    'prefix': 'tTheme.backButtonTitle'
     'body': """
       Theme.backButtonTitle
     """
   'Teaset Theme.primaryColor':
-    'prefix': 'Theme.primaryColor'
+    'prefix': 'tTheme.primaryColor'
     'body': """
       Theme.primaryColor
     """
   'Teaset Theme.dangerColor':
-    'prefix': 'Theme.dangerColor'
+    'prefix': 'tTheme.dangerColor'
     'body': """
       Theme.dangerColor
     """
   'Teaset Theme 修改默认配色方案':
-    'prefix': 'Theme.themes'
+    'prefix': 'tTheme.themes'
     'body': """
       Theme.set(Theme.themes.${1:default/black/violet})
     """
   'Teaset Theme 修改部分默认值':
-    'prefix': 'Theme.set'
+    'prefix': 'tTheme.set'
     'body': """
       Theme.set({
         primaryColor: '#f55e5d',
