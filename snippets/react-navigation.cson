@@ -75,15 +75,15 @@
     'body': """
       ${1:this.props.}navigation.getParam('$1')
     """
-  'React Navigation navigationOptions':
-    'prefix': 'navigationOptions'
+  'React Navigation navigationOptions func':
+    'prefix': 'navigationOptionsf'
     'body': """
       static navigationOptions = ({ ${1:navigation}${2:, navigationOptions}${3:, screenProps} }) => ({
-        title: navigation.getParam('title', '$4'),
-        headerStyle: {
+        headerTitle: navigation.getParam('headerTitle', '$4'),
+        ${5:headerStyle: {
           backgroundColor: '$5',
         },
-        headerTintColor: '$6',
+        headerTintColor: '$6',}
       })
     """
   'React Navigation LogoTitle':
@@ -102,6 +102,23 @@
       static navigationOptions = ({ ${3:navigation,} ${4:navigationOptions,} ${5:screenProps}}) => ({
         headerTitle: <LogoTitle />,
       })
+    """
+  # createStackNavigator
+  'initialRouteName':
+    'prefix': 'initialRouteName'
+    'body': """
+      "initialRouteName": '$1'
+    """
+  'navigationOptions':
+    'prefix': 'navigationOptions'
+    'body': """
+      navigationOptions: {
+        headerTitle: '$1',
+        ${2:headerStyle: {
+          backgroundColor: Theme.primaryColor,
+        },
+        headerTintColor: 'rgb(255,255,255)',}
+      },
     """
   # props
   'React Navigation headerRight':
