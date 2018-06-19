@@ -34,6 +34,11 @@
     'body': """
       fontWeight: '$1',
     """
+  'textAlign':
+    'prefix': 'textAlign'
+    'body': """
+      textAlign: '${1:center}',
+    """
   'fontSize':
     'prefix': 'fontSize'
     'body': """

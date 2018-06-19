@@ -152,10 +152,10 @@
     'body': """
       static navigationOptions = ({ ${1:navigation}${2:, navigationOptions}${3:, screenProps} }) => ({
         headerTitle: navigation.getParam('headerTitle', '$4'),
-        ${5:headerStyle: {
+        headerStyle: {
           backgroundColor: '$5',
         },
-        headerTintColor: '$6',}
+        headerTintColor: '$6',
       })
     """
   'React Navigation LogoTitle':
