@@ -184,13 +184,13 @@
   'navigationOptions':
     'prefix': 'navigationOptions'
     'body': """
-      navigationOptions: {
+      static navigationOptions = {
         headerTitle: '$1',
-        ${2:headerStyle: {
+        headerStyle: {
           backgroundColor: Theme.primaryColor,
         },
-        headerTintColor: 'rgb(255,255,255)',}
-      },
+        headerTintColor: 'rgb(255,255,255)',
+      }
     """
   # props
   'React Navigation headerRight':
