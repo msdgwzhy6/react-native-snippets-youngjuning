@@ -69,10 +69,10 @@
     'body': """
       <Label
         style={{$1}}
-        ${1:type="${2:title/detail/danger}}"
-        size="${3:md/lg}"
-        text= "${4:Label Text}"
-        ${5:numberOfLines={${6:1}}}
+        ${2:type="${3:title/detail/danger}}"
+        size="${4:md/lg}"
+        text= "${5:Label Text}"
+        ${6:numberOfLines={${7:1}}}
       />
     """
     'description': '<Label /> 标签'

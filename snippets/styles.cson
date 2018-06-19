@@ -24,6 +24,11 @@
     'body': """
       justifyContent: '${1:center}',
     """
+    'alignSelf':
+      'prefix': 'alignSelf'
+      'body': """
+        alignSelf: '${1:center}',
+      """
   'fontWeight':
     'prefix': 'fontWeight'
     'body': """

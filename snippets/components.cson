@@ -20,7 +20,7 @@
       </ScrollView>
     """
   'React Native Text Component':
-    'prefix': 'text'
+    'prefix': 'Text'
     'body': """
       <Text style={[$1]}>${2:React Native Text}</Text>
     """
