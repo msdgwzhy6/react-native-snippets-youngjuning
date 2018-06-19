@@ -30,6 +30,7 @@
           )
         }
       }
+      
     """
   # React Native 纯组件骨架
   'React Native Pure Component Skeleton':
