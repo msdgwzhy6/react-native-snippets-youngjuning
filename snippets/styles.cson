@@ -19,6 +19,11 @@
     'body': """
       alignItems: '${1:center}',
     """
+  'alignSlef':
+    'prefix': 'alignSlef'
+    'body': """
+      alignSlef: '${1:center}',
+    """
   'justifyContent':
     'prefix': 'justifyContent'
     'body': """
