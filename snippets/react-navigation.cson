@@ -42,7 +42,7 @@
             title: '首页',
             headerTitle: '首页',
             headerStyle: {
-              backgroundColor: Theme.primaryColor,
+              backgroundColor: 'rgb(85, 163, 223)',
             },
             headerTintColor: 'rgb(255,255,255)',
           },
@@ -58,7 +58,7 @@
             title: '我的',
             headerTitle: '我的',
             headerStyle: {
-              backgroundColor: Theme.primaryColor,
+              backgroundColor: 'rgb(85, 163, 223)',
             },
             headerTintColor: 'rgb(255,255,255)',
           },
@@ -72,7 +72,7 @@
         {
           initialRouteName: 'Home',
           tabBarOptions: {
-            activeTintColor: Theme.primaryColor ? Theme.primaryColor : 'tomato',
+            activeTintColor: 'rgb(85, 163, 223)',
             inactiveTintColor: 'gray',
           },
           navigationOptions: ({ navigation }) => ({

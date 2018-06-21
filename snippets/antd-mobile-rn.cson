@@ -1,6 +1,6 @@
 '.source.js.jsx':
   'DatePicker':
-    'prefix': 'DatePicker'
+    'prefix': 'aDatePicker'
     'body': """
       <DatePicker
         mode="${1:date/time/datetime/year/month}"
@@ -15,3 +15,44 @@
     """
     'description': 'DatePicker 日期选择'
     'descriptionMoreURL': 'http://t.cn/RBnYX7E'
+    # Data Display
+    'List 列表':
+      'prefix': 'aList'
+      'body': """
+        // const Item = List.Item
+        // const Brief = List.Item.Brief
+        <List>
+          <Item
+            // thumb // 缩略图(当为 string 类型时作为 img src)
+            // extra // 右边内容
+            // arrow // horizontal,up,down,empty
+            // align // 子元素垂直对齐，可选top,middle,bottom
+            // multipleLine // 多行
+            // wrap	 // 是否换行，默认情况下，文字超长会被隐藏
+            onClick={() => { $1 }}
+          >
+            标题文字
+            <Brief>辅助文字内容</Brief>
+          </Item>
+        </List>
+      """
+      'description': 'List 列表'
+      'descriptionMoreURL': 'http://t.cn/RrPdkUV'
+    'List.Item':
+      'prefix': 'aItem'
+      'body': """
+        <Item
+          // thumb // 缩略图(当为 string 类型时作为 img src)
+          // extra // 右边内容
+          // arrow // horizontal,up,down,empty
+          // align // 子元素垂直对齐，可选top,middle,bottom
+          // multipleLine // 多行
+          // wrap	 // 是否换行，默认情况下，文字超长会被隐藏
+          onClick={() => { $1 }}
+        >
+          标题文字
+          <Brief>辅助文字内容</Brief>
+        </Item>
+      """
+      'description': 'List.Item'
+      'descriptionMoreURL': 'http://t.cn/RrPkbZx'

@@ -30,7 +30,7 @@
           )
         }
       }
-      
+
     """
   # React Native 纯组件骨架
   'React Native Pure Component Skeleton':
@@ -123,3 +123,11 @@
     'body': """
       onPress={($1) => { $2 } }
     """
+  # 内置对象
+  'React Native 获取设备尺寸':
+    'prefix': 'Dimensions'
+    'body': """
+      Dimensions.get('${1:window/screen}')
+    """
+    'description': 'Dimensions 设备尺寸'
+    'descriptionMoreURL': 'http://t.cn/Rrvjvxi'
