@@ -27,13 +27,17 @@
   'React Native Image Component':
     'prefix': 'image'
     'body': """
-      <Image source={require('$1')}/>
+      <Image
+        resizeMode="cover" // contain/stretch
+        source={require('$1')}
+      />
     """
   'React Native Network Image Component':
     'prefix': 'imageNetwork'
     'body': """
       <Image
         style={[styles.$1]}
+        resizeMode="cover" // contain/stretch
         source={{uri: 'https://facebook.github.io/react/img/logo_og.png'}}
         style={{width: 400, height: 400}}
     />
