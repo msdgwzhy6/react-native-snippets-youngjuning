@@ -13,8 +13,9 @@
   'WingBlank':
     'prefix': 'aWingBlank'
     'body': """
-      {/* size="lg" // sm,md,lg */}
-      <WingBlank style={[styles.$1]}>
+      <WingBlank
+        size="lg" // sm,md,lg
+      >
         $2
       </WingBlank>
     """
@@ -23,13 +24,43 @@
   'WhiteSpace':
     'prefix': 'aWhiteSpace'
     'body': """
-      {/* size="md" // xs,sm,md,lg,xl */}
-      <WhiteSpace size="xl" />
+      <WhiteSpace
+        size="md" // xs,sm,md,lg,xl
+      />
     """
     'description': '上下留白'
     'descriptionMoreURL': 'http://t.cn/Rrw7lcB'
   # Navigation
-  
+  'Pagination 分页器':
+    'prefix': 'aPagination'
+    'body': """
+      <Pagination
+        mode="pointer" // button,number,pointer
+        simple // 是否隐藏数值
+        total={5}
+        current={2}
+        locale= {{
+          prevText: '上一页',
+          nextText: '下一页',
+        }}
+        // onChange= {$1}
+      />
+    """
+    'description': '分隔长列表，每次只加载一个页面'
+    'descriptionMoreURL': 'http://t.cn/RrAZ16w'
+  'SegmentedControl':
+    'prefix': 'aSegmentedControl'
+    'body': """
+      <SegmentedControl
+        tintColor="#2DB7F5"
+        selectedIndex={0}
+        values={['Segment1', 'Segment2', 'Segment3']}
+        onChange={$1}
+        onValueChange={$2}
+      />
+    """
+    'description': '由至少 2 个分段控件组成，用作不同视图的显示；是 iOS 的推荐组件'
+    'descriptionMoreURL': 'http://t.cn/RrAiTqJ'
   # Data Entry
   'DatePicker':
     'prefix': 'aDatePicker'

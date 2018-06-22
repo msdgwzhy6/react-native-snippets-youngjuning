@@ -89,6 +89,16 @@
     'body': """
       paddingRight: $1,
     """
+  'paddingHorizontal':
+    'prefix': 'paddingHorizontal'
+    'body': """
+      paddingHorizontal: $1,
+    """
+  'paddingVertical':
+    'prefix': 'paddingVertical'
+    'body': """
+      paddingVertical: $1,
+    """
   'paddingBottom':
     'prefix': 'paddingBottom'
     'body': """
@@ -102,10 +112,8 @@
   'margin-auto':
     'prefix': 'marginAuto'
     'body': """
-      marginTop: ${1:0},
-      marginRight: 'auto',
-      marginBottom: ${1:0},
-      marginLeft: 'auto',
+      marginVertical: 0,
+      marginHorizontal: 'auto'
     """
   'marginTop':
     'prefix': 'marginTop'
@@ -126,6 +134,16 @@
     'prefix': 'marginBottom'
     'body': """
       marginBottom: $1,
+    """
+  'marginHorizontal':
+    'prefix': 'marginHorizontal'
+    'body': """
+      marginHorizontal: $1,
+    """
+  'marginVertical':
+    'prefix': 'marginVertical'
+    'body': """
+      marginVertical: $1,
     """
   'position':
     'prefix': 'position'
