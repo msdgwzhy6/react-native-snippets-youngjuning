@@ -1,4 +1,35 @@
 '.source.js.jsx':
+  # Layout
+  'Flex':
+    'prefix': 'aFlex'
+    'body': """
+      {/* direction、wrap、justify、align */}
+      <Flex justify="start" align="center">
+        <Flex.Item />
+      </Flex>
+    """
+    'description': 'Flex 是 CSS flex 布局的一个封装'
+    'descriptionMoreURL': 'http://t.cn/RrZrmcn'
+  'WingBlank':
+    'prefix': 'aWingBlank'
+    'body': """
+      {/* size="lg" // sm,md,lg */}
+      <WingBlank style={[styles.$1]}>
+        $2
+      </WingBlank>
+    """
+    'description': '两翼留白'
+    'descriptionMoreURL': 'http://t.cn/RrwPNrv'
+  'WhiteSpace':
+    'prefix': 'aWhiteSpace'
+    'body': """
+      {/* size="md" // xs,sm,md,lg,xl */}
+      <WhiteSpace size="xl" />
+    """
+    'description': '上下留白'
+    'descriptionMoreURL': 'http://t.cn/Rrw7lcB'
+  # Navigation
+  
   # Data Entry
   'DatePicker':
     'prefix': 'aDatePicker'
