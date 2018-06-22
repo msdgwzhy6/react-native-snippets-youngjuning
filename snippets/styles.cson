@@ -19,10 +19,10 @@
     'body': """
       alignItems: '${1:center}',
     """
-  'alignSlef':
-    'prefix': 'alignSlef'
+  'alignSelf':
+    'prefix': 'alignSelf'
     'body': """
-      alignSlef: '${1:center}',
+      alignSelf: '${1:center}',
     """
   'justifyContent':
     'prefix': 'justifyContent'

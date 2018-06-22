@@ -127,7 +127,7 @@
   'React Native 获取设备尺寸':
     'prefix': 'Dimensions'
     'body': """
-      Dimensions.get('${1:window/screen}')
+      const {height, width} = Dimensions.get('window')
     """
     'description': 'Dimensions 设备尺寸'
     'descriptionMoreURL': 'http://t.cn/Rrvjvxi'
