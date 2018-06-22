@@ -62,6 +62,15 @@
     'description': '由至少 2 个分段控件组成，用作不同视图的显示；是 iOS 的推荐组件'
     'descriptionMoreURL': 'http://t.cn/RrAiTqJ'
   # Data Entry
+  'Button 按钮':
+    'prefix': 'aButton'
+    'body': """
+      <Button type="${1:primary/ghost/warning}" size="${2:large/small}">
+        ${primary}
+      </Button>
+    """
+    'description': '点击后会触发一个操作'
+    'descriptionMoreURL': 'http://t.cn/RrApbqb'
   'DatePicker':
     'prefix': 'aDatePicker'
     'body': """
