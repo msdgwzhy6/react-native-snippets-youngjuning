@@ -71,6 +71,45 @@
     """
     'description': '点击后会触发一个操作'
     'descriptionMoreURL': 'http://t.cn/RrApbqb'
+  'Checkbox 复选框':
+    'prefix': 'Checkbox'
+    'body': """
+      <Checkbox
+        checked={this.state.$1}
+        defaultChecked={this.state.$1}
+        onChange={(e) => {this.handleChange(e)}}
+      >${2:中国}
+      </Checkbox>
+    """
+    'description': '复选框'
+    'descriptionMoreURL': 'http://t.cn/Rrq1NZJ'
+  'Checkbox.CheckboxItem':
+    'prefix': 'Checkbox.CheckboxItem'
+    'body': """
+      <List>
+        <Text style={{ marginTop: 12 }}>Multiple options</Text>
+        {this.$1.map(i => (
+          <CheckboxItem
+            checked={`${this.$1.item}[${i.key}]`}
+            onChange={(e) => { this.handleChange(e, i.key) }}
+          >{i.value}
+          </CheckboxItem>
+        ))}
+      </List>
+    """
+    'description': 'Checkbox.CheckboxItem'
+    'descriptionMoreURL': 'http://t.cn/RrqBCAX'
+  'Checkbox.AgreeItem':
+    'prefix': 'AgreeItem'
+    'body': """
+      <AgreeItem
+        checked={this.state.agree}
+        onChange={(e) => { this.handleAgree(e) }}
+      >同意条款
+      </AgreeItem>
+    """
+    'description': '用于同意协议这种场景的复选框'
+    'descriptionMoreURL': 'http://t.cn/RrqrSlX'
   'DatePicker':
     'prefix': 'aDatePicker'
     'body': """
