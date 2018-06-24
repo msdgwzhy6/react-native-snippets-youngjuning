@@ -66,13 +66,13 @@
     'prefix': 'aButton'
     'body': """
       <Button type="${1:primary/ghost/warning}" size="${2:large/small}">
-        ${primary}
+        ${3:primary}
       </Button>
     """
     'description': '点击后会触发一个操作'
     'descriptionMoreURL': 'http://t.cn/RrApbqb'
   'Checkbox 复选框':
-    'prefix': 'Checkbox'
+    'prefix': 'aCheckbox'
     'body': """
       <Checkbox
         checked={this.state.$1}
@@ -84,7 +84,7 @@
     'description': '复选框'
     'descriptionMoreURL': 'http://t.cn/Rrq1NZJ'
   'Checkbox.CheckboxItem':
-    'prefix': 'Checkbox.CheckboxItem'
+    'prefix': 'aCheckboxItem'
     'body': """
       <List>
         <Text style={{ marginTop: 12 }}>Multiple options</Text>
@@ -100,7 +100,7 @@
     'description': 'Checkbox.CheckboxItem'
     'descriptionMoreURL': 'http://t.cn/RrqBCAX'
   'Checkbox.AgreeItem':
-    'prefix': 'AgreeItem'
+    'prefix': 'aAgreeItem'
     'body': """
       <AgreeItem
         checked={this.state.agree}
@@ -126,6 +126,34 @@
     """
     'description': 'DatePicker 日期选择'
     'descriptionMoreURL': 'http://t.cn/RBnYX7E'
+  'DatePickerView':
+    'prefix': 'aDatePickerView'
+    'body': """
+      <DatePickerView
+        mode="date" // time,datetime,year,month
+        minDate={new Date(2000, 1, 1)}
+        maxDate={new Date(2030, 1, 1)}
+        value={this.state.value}
+        onChange={this.handleChange}
+        onValueChange={this.handleValueChange}
+      />
+    """
+    'description': ''
+    'descriptionMoreURL': ''
+  'InputItem 文本输入':
+    'prefix': 'aInputItem'
+    'body': """
+      <InputItem
+        clear
+        type="text" // bankCard,phone,password,number,digit
+        value={this.state.${1}}
+        placeholder="placeholder"
+        onChange={(value) => { this.setState({ ${1}: value }) }}
+      >${2:输入框}
+      </InputItem>
+    """
+    'description': '用于接受单行文本'
+    'descriptionMoreURL': 'http://t.cn/Rr5jJms'
   # Data Display
   'List 列表':
     'prefix': 'aList'
