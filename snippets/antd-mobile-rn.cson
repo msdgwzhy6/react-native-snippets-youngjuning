@@ -1,4 +1,18 @@
 '.source.js.jsx':
+  'antd-mobile-rn':
+    'prefix': 'antd-mobile-rn'
+    'body': """
+      import { Button } from 'antd-mobile-rn'
+    """
+    'description': '按需加载 antd-mobile-rn 组件'
+    'descriptionMoreURL': 'http://t.cn/RrhJrYL'
+  'PlaceIMG':
+    'prefix': 'PlaceIMG'
+    'body': """
+      https://placeimg.com/${1:640}/${2:480}/any
+    """
+    'description': 'PlaceIMG'
+    'descriptionMoreURL': 'https://placeimg.com/'
   # Layout
   'Flex':
     'prefix': 'aFlex'
