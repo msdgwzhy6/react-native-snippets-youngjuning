@@ -10,7 +10,7 @@
         StyleSheet,
       } from 'react-native'
 
-      export default class MyComponent extends Component {
+      export default class ${1:MyComponent} extends Component {
         constructor(props) {
           super(props)
           this.state = {}
@@ -21,7 +21,7 @@
         render() {
           return (
             <View style={styles.container}>
-              <Text>I am the MyComponent component</Text>
+              <Text>I am the ${1:MyComponent} component</Text>
             </View>
           )
         }
