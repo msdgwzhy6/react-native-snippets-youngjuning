@@ -75,28 +75,28 @@
   'React Navigation 跳转到新页面':
     'prefix': 'stackNavigate'
     'body': """
-      this.props.navigation.navigate('$1', { ${2:/* params go here */} })
+      ${1:this.props.}navigation.navigate('$2', { ${3:/* params go here */} })
     """
     'description': '跳转到新的页面'
     'descriptionMoreURL': 'https://reactnavigation.org/docs/zh-Hans/navigating.html'
   'React Navigation 添加新页面并跳转':
     'prefix': 'stackPush'
     'body': """
-      this.props.navigation.push('$1')
+      ${1:this.props.}navigation.push('$2')
     """
     'description': '添加新页面并跳转'
     'descriptionMoreURL': 'https://reactnavigation.org/docs/zh-Hans/navigating.html'
   'React Navigation 手动返回':
     'prefix': 'stackGoBack'
     'body': """
-      this.props.navigation.goBack('$1')
+      ${1:this.props.}navigation.goBack('$2')
     """
     'description': '手动返回'
     'descriptionMoreURL': 'https://reactnavigation.org/docs/zh-Hans/navigating.html'
   'React Navigation 返回到堆栈中的第一个页面':
     'prefix': 'stackPopToTop'
     'body': """
-      this.props.navigation.popToTop()
+      ${1:this.props.}navigation.popToTop()
     """
     'description': '返回到堆栈中的第一个页面'
     'descriptionMoreURL': 'https://reactnavigation.org/docs/zh-Hans/hello-react-navigation.html#stack-navigator'
