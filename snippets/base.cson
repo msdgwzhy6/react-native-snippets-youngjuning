@@ -150,3 +150,10 @@
     """
     'description': 'Dimensions 设备尺寸'
     'descriptionMoreURL': 'http://t.cn/Rrvjvxi'
+  'React Native 获取设备尺寸screen':
+    'prefix': 'DimensionsScreen'
+    'body': """
+      const screen = Dimensions.get('screen')
+    """
+    'description': 'Dimensions 设备尺寸'
+    'descriptionMoreURL': 'http://t.cn/Rrvjvxi'
