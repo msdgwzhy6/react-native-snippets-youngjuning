@@ -137,6 +137,11 @@
     'body': """
       onPress={($1) => { $2 } }
     """
+  'onClick':
+    'prefix': 'onClick'
+    'body': """
+      onClick={($1) => { $2 } }
+    """
   # 内置对象
   'React Native 获取设备尺寸':
     'prefix': 'Dimensions'
