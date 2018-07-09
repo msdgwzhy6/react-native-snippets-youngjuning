@@ -113,7 +113,12 @@
   'React Navigation 读取页面组件中的参数 - 推荐':
     'prefix': 'stackGetParam'
     'body': """
-      ${1:this.props.}navigation.getParam('$1')
+      ${1:this.props.}navigation.getParam('$2')
+    """
+  '使用setParams更新navigationOptions':
+    'prefix': 'stackSetParams'
+    'body': """
+      ${1:this.props.}navigation.setParams({$2: $3})
     """
   'React Navigation navigationOptions func':
     'prefix': 'navigationOptionsf'
