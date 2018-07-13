@@ -11,6 +11,8 @@
     'body': """
       this.setState({
         $1
+      },() => {
+        $2
       })
     """
   'React Deconstruction props':
