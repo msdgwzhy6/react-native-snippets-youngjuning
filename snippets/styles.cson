@@ -19,21 +19,16 @@
     'body': """
       alignItems: '${1:center}',
     """
-  'alignSelf':
-    'prefix': 'alignSelf'
-    'body': """
-      alignSelf: '${1:center}',
-    """
   'justifyContent':
     'prefix': 'justifyContent'
     'body': """
       justifyContent: '${1:center}',
     """
-    'alignSelf':
-      'prefix': 'alignSelf'
-      'body': """
-        alignSelf: '${1:center}',
-      """
+  'alignSelf':
+    'prefix': 'alignSelf'
+    'body': """
+      alignSelf: '${1:center}',
+    """
   'fontWeight':
     'prefix': 'fontWeight'
     'body': """
@@ -169,4 +164,19 @@
     'prefix': 'left'
     'body': """
       left: ${1:0},
+    """
+  'borderColor':
+    'prefix': 'borderColor'
+    'body': """
+      borderColor: '$1',
+    """
+  'borderWidth':
+    'prefix': 'borderWidth'
+    'body': """
+      borderWidth: '$1',
+    """
+  'borderStyle':
+    'prefix': 'borderStyle'
+    'body': """
+      borderStyle: '${1:solid,dotted,dashed}',
     """
