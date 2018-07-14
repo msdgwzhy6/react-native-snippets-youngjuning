@@ -38,30 +38,24 @@
   'React Native Pure Component Skeleton':
     'prefix': 'rncp'
     'body': """
-      import React from 'react'
-      import {
-        View,
-        Text,
-        StyleSheet,
-      } from 'react-native'
+      import React, {PureComponent} from 'react'
+      import {View, StyleSheet} from 'react-native'
 
-      export default ({$2}) => (
-        ${3:<View style={styles.container\\}>
-          ${4:<Text>${5:I am ${1:MyComponent}}</Text>}
-        </View>}
-      )
+      export default class ChatListItem extends PureComponent {
+        render() {
+          return (
+            <View style={styles.container} />
+          )
+        }
+      }
 
       const styles = StyleSheet.create({
-        container: {
-          flex: 1,
-          justifyContent: 'center',
-          alignItems: 'center',
-        },
+        container: {},
       })
     """
   # RN 函数组件
-  'React Native Pure Function':
-    'prefix': 'rnpf'
+  'React Native Pure Function Component':
+    'prefix': 'rncf'
     'body': """
       const ${1:MyComponent} = ({$2}) => (
         ${3:<View style={styles.container\\}>
