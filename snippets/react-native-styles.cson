@@ -182,6 +182,26 @@
     'body': """
       borderWidth: '$1',
     """
+  'borderTopWidth':
+    'prefix': 'borderTopWidth'
+    'body': """
+      borderTopWidth: $1,
+    """
+  'borderBottomWidth':
+    'prefix': 'borderBottomWidth'
+    'body': """
+      borderBottomWidth: $1,
+    """
+  'borderLeftWidth':
+    'prefix': 'borderLeftWidth'
+    'body': """
+      borderLeftWidth: $1,
+    """
+  'borderRightWidth':
+    'prefix': 'borderRightWidth'
+    'body': """
+      borderRightWidth: $1,
+    """
   'borderStyle':
     'prefix': 'borderStyle'
     'body': """
