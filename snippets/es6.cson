@@ -1,0 +1,15 @@
+'.source.js.jsx':
+  'import命令：加载一个js模块':
+    'prefix': 'imp'
+    'body': """
+      import $1 from \'$2\'
+    """
+    'description': 'Module语法->import命令'
+    'descriptionMoreURL': 'http://es6.ruanyifeng.com/#docs/module#import-命令'
+  'new Promise':
+    'prefix': 'newpromise'
+    'body': """
+      return new Promise((resolve, reject) =>{
+        $1
+      })
+    """

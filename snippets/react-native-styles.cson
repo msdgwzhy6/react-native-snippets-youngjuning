@@ -1,4 +1,11 @@
 '.source.js.jsx':
+  'PlaceIMG':
+    'prefix': 'PlaceIMG'
+    'body': """
+      https://placeimg.com/${1:640}/${2:480}/any
+    """
+    'description': 'PlaceIMG'
+    'descriptionMoreURL': 'https://placeimg.com/'
   'style':
     'prefix': 'style'
     'body': """
@@ -19,21 +26,16 @@
     'body': """
       alignItems: '${1:center}',
     """
-  'alignSelf':
-    'prefix': 'alignSelf'
-    'body': """
-      alignSelf: '${1:center}',
-    """
   'justifyContent':
     'prefix': 'justifyContent'
     'body': """
       justifyContent: '${1:center}',
     """
-    'alignSelf':
-      'prefix': 'alignSelf'
-      'body': """
-        alignSelf: '${1:center}',
-      """
+  'alignSelf':
+    'prefix': 'alignSelf'
+    'body': """
+      alignSelf: '${1:center}',
+    """
   'fontWeight':
     'prefix': 'fontWeight'
     'body': """
@@ -89,6 +91,16 @@
     'body': """
       paddingRight: $1,
     """
+  'paddingHorizontal':
+    'prefix': 'paddingHorizontal'
+    'body': """
+      paddingHorizontal: $1,
+    """
+  'paddingVertical':
+    'prefix': 'paddingVertical'
+    'body': """
+      paddingVertical: $1,
+    """
   'paddingBottom':
     'prefix': 'paddingBottom'
     'body': """
@@ -102,10 +114,8 @@
   'margin-auto':
     'prefix': 'marginAuto'
     'body': """
-      marginTop: ${1:0},
-      marginRight: 'auto',
-      marginBottom: ${1:0},
-      marginLeft: 'auto',
+      marginVertical: 0,
+      marginHorizontal: 'auto'
     """
   'marginTop':
     'prefix': 'marginTop'
@@ -126,6 +136,16 @@
     'prefix': 'marginBottom'
     'body': """
       marginBottom: $1,
+    """
+  'marginHorizontal':
+    'prefix': 'marginHorizontal'
+    'body': """
+      marginHorizontal: $1,
+    """
+  'marginVertical':
+    'prefix': 'marginVertical'
+    'body': """
+      marginVertical: $1,
     """
   'position':
     'prefix': 'position'
@@ -151,4 +171,39 @@
     'prefix': 'left'
     'body': """
       left: ${1:0},
+    """
+  'borderColor':
+    'prefix': 'borderColor'
+    'body': """
+      borderColor: '$1',
+    """
+  'borderWidth':
+    'prefix': 'borderWidth'
+    'body': """
+      borderWidth: '$1',
+    """
+  'borderTopWidth':
+    'prefix': 'borderTopWidth'
+    'body': """
+      borderTopWidth: $1,
+    """
+  'borderBottomWidth':
+    'prefix': 'borderBottomWidth'
+    'body': """
+      borderBottomWidth: $1,
+    """
+  'borderLeftWidth':
+    'prefix': 'borderLeftWidth'
+    'body': """
+      borderLeftWidth: $1,
+    """
+  'borderRightWidth':
+    'prefix': 'borderRightWidth'
+    'body': """
+      borderRightWidth: $1,
+    """
+  'borderStyle':
+    'prefix': 'borderStyle'
+    'body': """
+      borderStyle: '${1:solid,dotted,dashed}',
     """

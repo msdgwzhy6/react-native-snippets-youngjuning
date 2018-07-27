@@ -11,7 +11,19 @@
     'body': """
       this.setState({
         $1
+      },() => {
+        $2
       })
+    """
+  'React Deconstruction props':
+    'prefix': 'rdprops'
+    'body': """
+      const { $1 } = this.props
+    """
+  'React Deconstruction state':
+    'prefix': 'rdstate'
+    'body': """
+      const { $1 } = this.state
     """
   "React: Component setState with Callback":
     'prefix': "thissetStateCallback"
