@@ -58,7 +58,7 @@
     'description': 'React Native 获取组件的prop'
     'descriptionMoreURL': 'http://t.cn/RB9iq3p'
   'react propTypes':
-    'prefix': 'propTypes'
+    'prefix': 'rpropTypes'
     'body': """
       static propTypes = {
         $1
